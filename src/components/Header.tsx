@@ -10,6 +10,10 @@ export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-blue/10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">

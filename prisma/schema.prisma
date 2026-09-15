@@ -1,0 +1,49 @@
+// Local: SQLite via DATABASE_URL="file:./dev.db"
+// Production (Vercel/Neon): change provider to "postgresql" and set DATABASE_URL to your Postgres URL.
+// See README for switching steps.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Reservation {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  email     String
+  phone     String   @default("")
+  partySize Int
+  date      String // YYYY-MM-DD (Europe/Zurich calendar date)
+  time      String // HH:mm
+  notes     String   @default("")
+  status    String   @default("pending") // pending | confirmed | cancelled | completed
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([date, time])
+  @@index([status])
+  @@index([email])
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model MenuAsset {
+  id        String   @id @default(cuid())
+  slot      String   @unique // e.g. salate, monatskarte, mittags, eisen, dessert-1
+  filename  String
+  url       String
+  mimeType  String   @default("")
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}

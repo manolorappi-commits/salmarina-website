@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ChatbotWidget } from "@/components/ChatbotWidget";
 import { site } from "@/lib/content";
 import "./globals.css";
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ChatbotWidget />
       </body>
     </html>
   );

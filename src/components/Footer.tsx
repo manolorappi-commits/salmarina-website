@@ -1,7 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { site } from "@/lib/content";
 
 export function Footer() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <footer className="bg-brand-powder text-brand-blue mt-auto">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-14 md:py-16">
@@ -41,16 +49,6 @@ export function Footer() {
               <li>
                 <a
                   className="underline underline-offset-2 hover:opacity-80"
-                  href={site.social.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  className="underline underline-offset-2 hover:opacity-80"
                   href={site.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -58,29 +56,45 @@ export function Footer() {
                   Instagram
                 </a>
               </li>
-            </ul>
-            <ul className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm">
               <li>
-                <Link href="/impressum" className="underline underline-offset-2 hover:opacity-80">
-                  Impressum
-                </Link>
-              </li>
-              <li>
-                <Link href="/datenschutz" className="underline underline-offset-2 hover:opacity-80">
-                  Datenschutz
-                </Link>
-              </li>
-              <li>
-                <Link href="/agb" className="underline underline-offset-2 hover:opacity-80">
-                  AGB
-                </Link>
+                <a
+                  className="underline underline-offset-2 hover:opacity-80"
+                  href={site.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <p className="mt-12 text-xs text-brand-blue/70">
-          © {new Date().getFullYear()} {site.name}. Alle Rechte vorbehalten.
-        </p>
+
+        <div className="mt-12 pt-8 border-t border-brand-blue/20 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-sm">
+          <p>© {new Date().getFullYear()} {site.name}</p>
+          <ul className="flex flex-wrap gap-4">
+            <li>
+              <Link href="/impressum" className="underline underline-offset-2 hover:opacity-80">
+                Impressum
+              </Link>
+            </li>
+            <li>
+              <Link href="/datenschutz" className="underline underline-offset-2 hover:opacity-80">
+                Datenschutz
+              </Link>
+            </li>
+            <li>
+              <Link href="/agb" className="underline underline-offset-2 hover:opacity-80">
+                AGB
+              </Link>
+            </li>
+            <li>
+              <Link href="/reservierungen" className="underline underline-offset-2 hover:opacity-80">
+                Reservierungen
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

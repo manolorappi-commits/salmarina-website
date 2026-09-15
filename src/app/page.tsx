@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { Button } from "@/components/Button";
 import { ReservationForm } from "@/components/ReservationForm";
 import { site } from "@/lib/content";
@@ -94,7 +95,9 @@ export default function HomePage() {
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
-          <ReservationForm compact />
+          <Suspense fallback={<p className="text-center text-brand-ink/60">Laden…</p>}>
+            <ReservationForm compact />
+          </Suspense>
         </div>
         <p className="text-center mt-6 text-sm text-brand-blue/70">
           Oder{" "}

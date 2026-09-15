@@ -1,0 +1,10 @@
+{
+  "timezone": "Europe/Zurich",
+  "slotIntervalMinutes": 30,
+  "maxSeatsPerSlot": 40,
+  "maxPartiesPerSlot": 8,
+  "autoConfirm": false,
+  "lastSeatingLunch": "14:00",
+  "lastSeatingDinner": "21:30",
+  "hoursNote": "Mo geschlossen; Di–Fr 11–14 & ab 17; Sa ab 17; So ab 11 (abends geschlossen)"
+}

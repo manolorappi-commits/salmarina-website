@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { PageHero } from "@/components/PageHero";
 import { ReservationForm } from "@/components/ReservationForm";
 import { site } from "@/lib/content";
+import reservationsConfig from "../../../content/reservations.json";
 
 export const metadata: Metadata = {
   title: "Reservierungen",
@@ -13,10 +15,12 @@ export default function ReservierungenPage() {
     <div className="pb-16">
       <PageHero
         title="Reservierungen"
-        intro="Teilen Sie uns Personenzahl, Datum und Uhrzeit mit — wir melden uns zur Bestätigung."
+        intro="Wählen Sie Datum und Uhrzeit — wir speichern Ihre Anfrage und senden eine Bestätigung per E-Mail."
       />
       <div className="mx-auto max-w-6xl px-4 sm:px-6 grid md:grid-cols-2 gap-12">
-        <ReservationForm />
+        <Suspense fallback={<p className="text-brand-ink/60">Formular wird geladen…</p>}>
+          <ReservationForm />
+        </Suspense>
         <aside className="space-y-4 text-brand-blue/85">
           <h2 className="font-serif text-2xl text-brand-blue">Direkt kontaktieren</h2>
           <p>
@@ -42,8 +46,10 @@ export default function ReservierungenPage() {
             </ul>
           </div>
           <p className="text-sm text-brand-blue/70 pt-4">
-            Hinweis: Anfragen über das Formular öffnen Ihr E-Mail-Programm. Eine Reservierung gilt
-            erst nach unserer Bestätigung.
+            Online-Reservierung gemäss Öffnungszeiten (Zeitzone Europe/Zurich). Max.{" "}
+            {reservationsConfig.maxSeatsPerSlot} Plätze bzw. {reservationsConfig.maxPartiesPerSlot}{" "}
+            Partien pro Zeitslot. Eine Anfrage gilt als bestätigt, sobald Sie unsere Bestätigung
+            erhalten (Status «bestätigt»).
           </p>
         </aside>
       </div>

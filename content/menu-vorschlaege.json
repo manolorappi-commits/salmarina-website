@@ -4,11 +4,11 @@
   "subtitle": "Menüvorschläge zum selbst kombinieren",
   "overviewPdf": "/menus/menuevorschlaege-uebersicht.pdf",
   "tiers": [
-    { "id": "eisen", "name": "Eisen", "pdf": "/menus/eisen.pdf", "description": "Einstiegsmenü für kleinere Anlässe" },
-    { "id": "aluminium", "name": "Aluminium", "pdf": "/menus/aluminium.pdf", "description": "Leichtes Menü mit mediterranen Klassikern" },
-    { "id": "kupfer", "name": "Kupfer", "pdf": "/menus/kupfer.pdf", "description": "Ausgewogenes Drei-Gänge-Erlebnis" },
-    { "id": "silber", "name": "Silber", "pdf": "/menus/silber.pdf", "description": "Gehobenes Menü für besondere Abende" },
-    { "id": "gold", "name": "Gold", "pdf": "/menus/gold.pdf", "description": "Festliches Menü mit Premium-Gerichten" },
-    { "id": "diamant", "name": "Diamant", "pdf": "/menus/diamant.pdf", "description": "Unser exklusivstes Menüangebot" }
+    { "id": "eisen", "name": "Eisen", "pdf": "/menus/eisen.pdf", "description": "CHF 28 — Gemischter Salat, Mais-Poulardenbrust, Panna Cotta" },
+    { "id": "aluminium", "name": "Aluminium", "pdf": "/menus/aluminium.pdf", "description": "CHF 33 — Linsensuppe, Doradenfilet, Tiramisù" },
+    { "id": "kupfer", "name": "Kupfer", "pdf": "/menus/kupfer.pdf", "description": "CHF 39 — Nüsslisalat, Kalbsbraten, Crema Catalana" },
+    { "id": "silber", "name": "Silber", "pdf": "/menus/silber.pdf", "description": "CHF 49 — Paprikacarpaccio, Tagliatelle, Kalbsschnitzel Saltimbocca, Apfelküchlein" },
+    { "id": "gold", "name": "Gold", "pdf": "/menus/gold.pdf", "description": "CHF 64 — Burrata, Creveten, Kalbs-Höhenrücken, Schokoladen-Coulant" },
+    { "id": "diamant", "name": "Diamant", "pdf": "/menus/diamant.pdf", "description": "CHF 105 — mehrere Vorspeisen, Secreto Ibérico, Feigenküchlein" }
   ]
 }

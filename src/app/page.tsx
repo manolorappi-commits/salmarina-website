@@ -16,9 +16,9 @@ export default function HomePage() {
   return (
     <>
       {/* Welcome + hero */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 pt-10 md:pt-14">
-        <p className="font-serif text-brand-blue text-lg md:text-xl mb-6">{site.home.welcome}</p>
-        <div className="relative overflow-hidden rounded-xl bg-brand-cream">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 pt-12 md:pt-16">
+        <p className="font-serif text-brand-mint text-lg md:text-xl mb-7">{site.home.welcome}</p>
+        <div className="relative overflow-hidden rounded-2xl bg-brand-sea ring-1 ring-brand-mint/15">
           <Image
             src="/images/hero-food.jpg"
             alt="Pinsa mit Rohschinken und Rucola bei Salmarina"
@@ -32,11 +32,11 @@ export default function HomePage() {
       </section>
 
       {/* Intro */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-14 md:py-20 text-center">
-        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brand-blue mb-6 leading-tight">
+      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-16 md:py-24 text-center">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-brand-blue mb-7 leading-tight font-semibold">
           {site.home.headline}
         </h1>
-        <p className="text-brand-blue/85 leading-relaxed mb-8">{site.home.intro}</p>
+        <p className="text-brand-ink/75 leading-relaxed mb-10 text-base md:text-lg">{site.home.intro}</p>
         <div className="flex flex-wrap justify-center gap-3">
           <Button href="/speisekarte">{site.home.ctaMenu}</Button>
           <Button href="/monatskarte" variant="outline">
@@ -46,9 +46,9 @@ export default function HomePage() {
       </section>
 
       {/* About + quote */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16 md:pb-24">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-20 md:pb-28">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-brand-mint/15">
             <Image
               src="/images/hero-interior.jpg"
               alt="Ambiente im Restaurant Salmarina"
@@ -57,12 +57,12 @@ export default function HomePage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="space-y-6">
-            <p className="text-brand-blue/90 leading-relaxed text-lg">{site.home.about}</p>
-            <blockquote className="font-serif text-2xl md:text-3xl text-brand-blue leading-snug">
+          <div className="space-y-8">
+            <p className="text-brand-ink/80 leading-relaxed text-lg">{site.home.about}</p>
+            <blockquote className="font-serif text-2xl md:text-3xl text-brand-blue leading-snug font-semibold">
               „{site.home.quote}“
             </blockquote>
-            <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl ring-1 ring-brand-mint/15">
               <Image
                 src="/gallery/06-risotto-crevetten.jpg"
                 alt="Risotto mit Crevetten bei Salmarina"
@@ -75,18 +75,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Food grid on rust */}
-      <section className="bg-brand-rust py-12 md:py-16" aria-label="Impressionen">
+      {/* Food grid — fresher lagoon instead of heavy rust */}
+      <section className="bg-brand-lagoon py-14 md:py-20" aria-label="Impressionen">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid grid-cols-2 gap-3 md:gap-4">
+          <div className="grid grid-cols-2 gap-3 md:gap-5">
             {homeGrid.map((img) => (
-              <div key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <div key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-white/10">
                 <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="50vw" />
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Link href="/galerie" className="text-white/90 underline underline-offset-4 hover:text-white text-sm">
+          <div className="text-center mt-10">
+            <Link
+              href="/galerie"
+              className="text-white/95 underline underline-offset-4 hover:text-white text-sm font-medium"
+            >
               Zur Galerie
             </Link>
           </div>
@@ -94,25 +97,27 @@ export default function HomePage() {
       </section>
 
       {/* Reservation CTA */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16 md:py-20">
-        <div className="text-center mb-8">
-          <h2 className="font-serif text-3xl md:text-4xl text-brand-blue mb-3">{site.home.ctaReserve}</h2>
-          <p className="text-brand-blue/80">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-20 md:py-24">
+        <div className="text-center mb-10">
+          <h2 className="font-serif text-3xl md:text-4xl text-brand-blue mb-4 font-semibold">
+            {site.home.ctaReserve}
+          </h2>
+          <p className="text-brand-ink/70 text-base md:text-lg">
             Wir suchen einen passenden Platz basierend auf diesen Angaben.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto rounded-2xl border border-brand-mint/20 bg-white/70 p-6 sm:p-8 shadow-sm">
           <Suspense fallback={<p className="text-center text-brand-ink/60">Laden…</p>}>
             <ReservationForm compact />
           </Suspense>
         </div>
-        <p className="text-center mt-6 text-sm text-brand-blue/70">
+        <p className="text-center mt-8 text-sm text-brand-lagoon/80">
           Oder{" "}
-          <Link href="/reservierungen" className="underline underline-offset-2">
+          <Link href="/reservierungen" className="underline underline-offset-2 hover:text-brand-mint">
             detaillierte Reservierung
           </Link>{" "}
           ·{" "}
-          <a href={site.phoneHref} className="underline underline-offset-2">
+          <a href={site.phoneHref} className="underline underline-offset-2 hover:text-brand-mint">
             {site.phone}
           </a>
         </p>

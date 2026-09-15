@@ -8,7 +8,7 @@ type Props = {
 
 export function MenuImage({ src, alt, priority }: Props) {
   return (
-    <figure className="overflow-hidden rounded-lg shadow-sm border border-brand-blue/10 bg-brand-cream">
+    <figure className="overflow-hidden rounded-xl shadow-sm border border-brand-mint/20 bg-brand-sea">
       <Image
         src={src}
         alt={alt}

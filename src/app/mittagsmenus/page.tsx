@@ -21,21 +21,21 @@ export default function MittagsmenusPage() {
   const download = "download" in m && typeof m.download === "string" ? m.download : m.image;
 
   return (
-    <div className="pb-16">
+    <div className="pb-20">
       <PageHero title={m.title} intro={m.intro} />
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-10">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-12">
         <div>
           <MenuImage src={m.image} alt={m.alt} priority />
-          <p className="mt-3 text-center text-sm">
+          <p className="mt-4 text-center text-sm font-medium">
             <a
               href={download}
               download
-              className="text-brand-blue underline underline-offset-4 hover:text-brand-coral"
+              className="text-brand-lagoon underline underline-offset-4 hover:text-brand-mint"
             >
               Mittagsmenü herunterladen
             </a>
             {" · "}
-            <Link href="/speisekarte" className="text-brand-blue/70 underline underline-offset-4">
+            <Link href="/speisekarte" className="text-brand-ink/60 underline underline-offset-4 hover:text-brand-mint">
               Zur Speisekarte
             </Link>
           </p>
@@ -43,23 +43,21 @@ export default function MittagsmenusPage() {
 
         {items.length > 0 && (
           <section>
-            <h2 className="font-serif text-2xl text-brand-blue mb-4 text-center">Wochenübersicht</h2>
-            <ul className="rounded-xl border border-brand-blue/10 bg-white px-4 sm:px-6 shadow-sm divide-y divide-brand-blue/10">
+            <h2 className="menu-category-title mb-6 text-center text-[1.75rem] md:text-[2rem]">
+              Wochenübersicht
+            </h2>
+            <ul className="menu-card px-5 sm:px-7 divide-y divide-brand-mint/15">
               {items.map((item) => (
-                <li key={item.name} className="py-3.5 flex justify-between gap-4 items-baseline">
+                <li key={item.name} className="py-5 flex justify-between gap-4 items-baseline">
                   <div>
-                    <p className="font-medium text-brand-ink">{item.name}</p>
-                    {item.description && (
-                      <p className="text-sm text-brand-ink/65 mt-0.5">{item.description}</p>
-                    )}
+                    <p className="menu-dish-name">{item.name}</p>
+                    {item.description && <p className="menu-dish-desc mt-1">{item.description}</p>}
                   </div>
-                  <p className="shrink-0 tabular-nums text-brand-blue font-medium whitespace-nowrap">
-                    CHF {item.price}
-                  </p>
+                  <p className="menu-dish-price shrink-0">CHF {item.price}</p>
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-center text-xs text-brand-ink/50">
+            <p className="mt-5 text-center text-sm text-brand-ink/50">
               Die Wochenkarte wechselt — bitte auch das Bild oben beachten.
             </p>
           </section>

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function GaleriePage() {
   return (
-    <div className="pb-16">
+    <div className="pb-20">
       <PageHero title={gallery.title} intro={gallery.intro} />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {gallery.images.map((img) => (
-            <li key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-xl bg-brand-cream">
+            <li key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-sea ring-1 ring-brand-mint/15">
               <Image
                 src={img.src}
                 alt={img.alt}

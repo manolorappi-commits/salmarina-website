@@ -28,7 +28,7 @@ export default async function ErfolgPage({ searchParams }: Props) {
     <div className="pb-16">
       <PageHero title="Vielen Dank!" intro={statusText} />
       <div className="mx-auto max-w-xl px-4 sm:px-6 space-y-6 text-center">
-        <div className="rounded-xl border border-brand-blue/15 bg-brand-cream/60 p-8">
+        <div className="rounded-xl border border-brand-mint/20 bg-brand-sea/80 p-8">
           <p className="text-sm text-brand-blue mb-2">Ihre Referenz</p>
           <p className="font-serif text-3xl text-brand-blue tracking-wide">{code}</p>
           <p className="mt-4 text-brand-ink/80 text-sm leading-relaxed">

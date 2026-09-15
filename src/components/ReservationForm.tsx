@@ -18,7 +18,7 @@ type Props = {
 };
 
 const field =
-  "w-full rounded-md border border-brand-blue/20 bg-white px-3 py-2.5 text-brand-ink placeholder:text-brand-ink/40 focus:border-brand-blue focus:ring-1 focus:ring-brand-blue outline-none";
+  "w-full rounded-lg border border-brand-mint/25 bg-white/90 px-3 py-2.5 text-brand-ink placeholder:text-brand-ink/40 focus:border-brand-mint focus:ring-1 focus:ring-brand-mint outline-none";
 
 export function ReservationForm({ compact = false }: Props) {
   const router = useRouter();

@@ -15,7 +15,7 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-blue/10">
+    <header className="sticky top-0 z-50 bg-brand-foam/90 backdrop-blur-md border-b border-brand-mint/15">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between gap-4 py-4 md:py-5">
           <Link
@@ -28,7 +28,7 @@ export function Header() {
 
           <button
             type="button"
-            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-brand-blue"
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-brand-blue hover:bg-brand-sea"
             aria-expanded={open}
             aria-controls="main-nav"
             aria-label={open ? "Menü schliessen" : "Menü öffnen"}
@@ -47,7 +47,7 @@ export function Header() {
           <nav
             id="main-nav"
             className={cn(
-              "absolute left-0 right-0 top-full bg-white border-b border-brand-blue/10 md:static md:border-0 md:bg-transparent",
+              "absolute left-0 right-0 top-full bg-brand-foam/98 border-b border-brand-mint/15 md:static md:border-0 md:bg-transparent",
               open ? "block" : "hidden md:block",
             )}
             aria-label="Hauptnavigation"
@@ -63,10 +63,10 @@ export function Header() {
                     <Link
                       href={item.href}
                       className={cn(
-                        "block py-2 md:py-1 text-sm tracking-wide transition-colors",
+                        "block py-2 md:py-1 text-sm tracking-wide transition-colors rounded-full md:px-1",
                         active
-                          ? "text-brand-blue font-medium"
-                          : "text-brand-ink/70 hover:text-brand-blue",
+                          ? "text-brand-lagoon font-semibold"
+                          : "text-brand-ink/70 hover:text-brand-mint",
                       )}
                       aria-current={active ? "page" : undefined}
                       onClick={() => setOpen(false)}

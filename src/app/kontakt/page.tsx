@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function KontaktPage() {
   return (
-    <div className="pb-16">
+    <div className="pb-20">
       <PageHero title="Kontakt" eyebrow="" />
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mb-16">
@@ -18,8 +18,8 @@ export default function KontaktPage() {
           <h2 className="font-serif text-3xl md:text-4xl text-brand-blue">Besuchen Sie uns</h2>
           <div>
             <h3 className="font-serif text-xl text-brand-blue mb-2">Unsere Adresse</h3>
-            <p className="text-brand-blue/85 leading-relaxed">{site.address.full}</p>
-            <p className="mt-3 text-brand-blue/85">
+            <p className="text-brand-ink/75 leading-relaxed">{site.address.full}</p>
+            <p className="mt-3 text-brand-ink/75">
               <a className="underline underline-offset-2" href={`mailto:${site.email}`}>
                 {site.email}
               </a>
@@ -31,7 +31,7 @@ export default function KontaktPage() {
           </div>
           <div>
             <h3 className="font-serif text-xl text-brand-blue mb-2">Öffnungszeiten</h3>
-            <ul className="text-brand-blue/85 space-y-1 text-sm leading-relaxed">
+            <ul className="text-brand-ink/75 space-y-1 text-sm leading-relaxed">
               {site.hours.map((h) => (
                 <li key={h.days}>
                   <span className="font-medium">{h.days}</span> {h.text}
@@ -46,7 +46,7 @@ export default function KontaktPage() {
         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
           <div>
             <h2 className="font-serif text-3xl text-brand-blue mb-4">Anfragen</h2>
-            <p className="text-brand-blue/85 leading-relaxed mb-4">
+            <p className="text-brand-ink/75 leading-relaxed mb-4">
               Haben Sie Fragen zu unserer Speisekarte oder möchten Sie einen Tisch reservieren?
               Hinterlassen Sie uns eine Nachricht, wir melden uns umgehend bei Ihnen.
             </p>
@@ -59,7 +59,7 @@ export default function KontaktPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-16">
-        <div className="overflow-hidden rounded-xl border border-brand-blue/15 bg-brand-cream aspect-[21/9] min-h-[200px]">
+        <div className="overflow-hidden rounded-xl border border-brand-mint/20 bg-brand-sea aspect-[21/9] min-h-[200px]">
           <iframe
             title="Karte — Salmarina Hombrechtikon"
             className="w-full h-full min-h-[200px]"

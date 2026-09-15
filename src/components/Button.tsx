@@ -3,14 +3,16 @@ import { cn } from "@/lib/utils";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 const base =
-  "inline-flex items-center justify-center font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue disabled:opacity-60";
+  "inline-flex items-center justify-center font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue disabled:opacity-60";
 
 const variants = {
-  primary: "bg-brand-blue text-white hover:bg-brand-blue/90 rounded-full px-6 py-3",
-  secondary: "bg-brand-coral text-white hover:bg-brand-coral/90 rounded-full px-6 py-3",
+  primary:
+    "bg-brand-blue text-white hover:bg-brand-lagoon rounded-full px-7 py-3 shadow-sm shadow-brand-blue/15",
+  secondary:
+    "bg-brand-coral text-white hover:bg-brand-coral/90 rounded-full px-7 py-3 shadow-sm shadow-brand-coral/15",
   outline:
-    "border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white rounded-full px-6 py-3",
-  pill: "bg-brand-blue text-white hover:bg-brand-blue/90 rounded-md px-5 py-2.5 text-sm",
+    "border-2 border-brand-mint/70 text-brand-lagoon hover:bg-brand-sea hover:border-brand-mint hover:text-brand-lagoon rounded-full px-7 py-3",
+  pill: "bg-brand-blue text-white hover:bg-brand-lagoon rounded-md px-5 py-2.5 text-sm",
 } as const;
 
 type Variant = keyof typeof variants;

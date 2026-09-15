@@ -4,9 +4,14 @@
   --color-brand-blue: #0A74AE;
   --color-brand-coral: #FB5101;
   --color-brand-rust: #9E3B1B;
-  --color-brand-powder: #B8E2FF;
-  --color-brand-cream: #FAF8F5;
+  --color-brand-powder: #C5E8F7;
+  --color-brand-cream: #F6FAF8;
   --color-brand-ink: #1A2A33;
+  /* Fresher Mediterranean / coastal accents */
+  --color-brand-mint: #2A9D8F;
+  --color-brand-sea: #E5F3F0;
+  --color-brand-foam: #F2F9FC;
+  --color-brand-lagoon: #0E6B7A;
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
 }
@@ -16,13 +21,13 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: var(--color-brand-foam);
   color: var(--color-brand-ink);
   font-family: var(--font-sans);
 }
 
 ::selection {
-  background: color-mix(in srgb, #0A74AE 25%, white);
+  background: color-mix(in srgb, #2A9D8F 28%, white);
 }
 
 /* Accessible focus */
@@ -33,4 +38,42 @@ body {
 
 .prose-legal a {
   color: #0A74AE;
+}
+
+/* Speisekarte / menu hierarchy — larger & bolder */
+.menu-category-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.875rem, 1.4rem + 1.5vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--color-brand-blue);
+}
+
+.menu-dish-name {
+  font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-brand-ink);
+}
+
+.menu-dish-price {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--color-brand-blue);
+}
+
+.menu-dish-desc {
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--color-brand-ink) 68%, transparent);
+}
+
+.menu-card {
+  border-radius: 0.875rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand-mint) 18%, transparent);
+  background: color-mix(in srgb, white 88%, var(--color-brand-sea));
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--color-brand-lagoon) 6%, transparent);
 }

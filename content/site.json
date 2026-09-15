@@ -1,0 +1,50 @@
+{
+  "name": "Salmarina",
+  "tagline": "Mediterrane Küche",
+  "locale": "de-CH",
+  "url": "https://www.salmarina.ch",
+  "address": {
+    "street": "Eichtalstrasse 53",
+    "zip": "8634",
+    "city": "Hombrechtikon",
+    "country": "Schweiz",
+    "full": "Eichtalstrasse 53, 8634 Hombrechtikon"
+  },
+  "email": "info@salmarina.ch",
+  "phone": "078 315 03 15",
+  "phoneHref": "tel:+41783150315",
+  "social": {
+    "instagram": "https://www.instagram.com/salmarinahombi/",
+    "facebook": "https://www.facebook.com/restaurantzeughausgrill/?locale=de_DE"
+  },
+  "hours": [
+    { "days": "Mo", "text": "Ruhetag" },
+    { "days": "Di–Fr", "text": "11–14 Uhr / ab 17 Uhr" },
+    { "days": "Sa", "text": "ab 17 Uhr" },
+    { "days": "So", "text": "Tapas & Paella ab 11 Uhr (abends geschlossen)" }
+  ],
+  "nav": [
+    { "label": "Start", "href": "/" },
+    { "label": "Speisekarte", "href": "/speisekarte" },
+    { "label": "Monatskarte", "href": "/monatskarte" },
+    { "label": "Mittagsmenüs", "href": "/mittagsmenus" },
+    { "label": "Menüvorschläge", "href": "/menuevorschlaege" },
+    { "label": "News", "href": "/news" },
+    { "label": "Galerie", "href": "/galerie" },
+    { "label": "Kontakt", "href": "/kontakt" },
+    { "label": "Reservierungen", "href": "/reservierungen" }
+  ],
+  "home": {
+    "welcome": "Willkommen bei Salmarina",
+    "headline": "Entdecke die mediterrane Vielfalt",
+    "intro": "In unserem Restaurant in Hombrechtikon servieren wir mediterrane Küche mit frischen Zutaten, herzlicher Atmosphäre und einem Hauch Mittelmeer. Ob Pizza aus dem Ofen, Pasta, Fisch oder Tapas — bei uns geniessen Sie den Moment.",
+    "about": "Salmarina steht für unkomplizierten Genuss und mediterrane Lebensfreude. Wir kochen mit Leidenschaft, begrüssen Sie persönlich und freuen uns auf Ihren Besuch — mittags, abends oder am Sonntag bei Tapas & Paella.",
+    "quote": "Ein kulinarisches Erlebnis, das begeistert.",
+    "ctaMenu": "Speisekarte ansehen",
+    "ctaReserve": "Tisch anfragen"
+  },
+  "seo": {
+    "title": "Salmarina — Mediterrane Küche in Hombrechtikon",
+    "description": "Restaurant Salmarina in Hombrechtikon: mediterrane Küche, Pizza, Pasta, Fisch, Tapas & Paella. Reservieren Sie Ihren Tisch."
+  }
+}

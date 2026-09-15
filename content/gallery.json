@@ -1,0 +1,16 @@
+{
+  "title": "Galerie",
+  "intro": "Einblicke in Küche, Teller und Atmosphäre.",
+  "images": [
+    { "src": "/gallery/01-pizza.jpg", "alt": "Frische Pizza bei Salmarina" },
+    { "src": "/gallery/02-interior.png", "alt": "Restaurant-Ambiente" },
+    { "src": "/gallery/03-salat.jpg", "alt": "Salat und Vorspeisen" },
+    { "src": "/gallery/04-pasta.jpg", "alt": "Pasta und Risotto" },
+    { "src": "/gallery/05-fleisch.jpg", "alt": "Fleisch und Fisch" },
+    { "src": "/gallery/06-pizza-ofen.jpg", "alt": "Pizza aus dem Ofen" },
+    { "src": "/gallery/07-dessert.jpg", "alt": "Dessert" },
+    { "src": "/gallery/08-dessert-2.jpg", "alt": "Süsse Nachspeisen" },
+    { "src": "/gallery/09-mittag.jpg", "alt": "Mittagsangebot" },
+    { "src": "/gallery/10-monat.jpg", "alt": "Monatliche Spezialitäten" }
+  ]
+}

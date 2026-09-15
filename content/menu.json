@@ -1,0 +1,48 @@
+{
+  "title": "Speisekarte",
+  "intro": "Unsere Speisekarte — mediterrane Klassiker, frisch zubereitet. Preise und Gerichte können sich ändern; aktuelle Angaben entnehmen Sie den Kartenbildern.",
+  "categories": [
+    {
+      "id": "salate",
+      "title": "Salate & Kleinigkeiten",
+      "image": "/menus/salate.jpg",
+      "alt": "Speisekarte Salate und Kleinigkeiten"
+    },
+    {
+      "id": "teigwaren",
+      "title": "Teigwaren und Risotto",
+      "image": "/menus/teigwaren.jpg",
+      "alt": "Speisekarte Teigwaren und Risotto"
+    },
+    {
+      "id": "fleisch-fisch",
+      "title": "Fleisch und Fisch",
+      "image": "/menus/fleisch-fisch.jpg",
+      "alt": "Speisekarte Fleisch und Fisch"
+    },
+    {
+      "id": "pizza",
+      "title": "Pizza",
+      "image": "/menus/pizza.jpg",
+      "alt": "Speisekarte Pizza"
+    },
+    {
+      "id": "dessert",
+      "title": "Dessert",
+      "images": ["/menus/dessert-1.jpg", "/menus/dessert-2.jpg"],
+      "alt": "Speisekarte Dessert"
+    }
+  ],
+  "monatskarte": {
+    "title": "Monatskarte",
+    "intro": "Unsere wechselnde Monatskarte mit saisonalen Spezialitäten. Das Bild ersetzen Sie jederzeit unter public/menus/monatskarte.jpg.",
+    "image": "/menus/monatskarte.jpg",
+    "alt": "Aktuelle Monatskarte Salmarina"
+  },
+  "mittagsmenus": {
+    "title": "Mittagsmenüs",
+    "intro": "Unsere Mittagsangebote von Dienstag bis Freitag. Das Bild ersetzen Sie jederzeit unter public/menus/mittagsmenu.jpg.",
+    "image": "/menus/mittagsmenu.jpg",
+    "alt": "Aktuelle Mittagsmenüs Salmarina"
+  }
+}

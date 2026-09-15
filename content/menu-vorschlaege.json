@@ -1,0 +1,14 @@
+{
+  "title": "Menüvorschläge",
+  "intro": "Fertige Menüvorschläge für Anlässe — von Eisen bis Diamant. Wählen Sie eine Stufe oder laden Sie die Übersicht herunter.",
+  "subtitle": "Menüvorschläge zum selbst kombinieren",
+  "overviewPdf": "/menus/menuevorschlaege-uebersicht.pdf",
+  "tiers": [
+    { "id": "eisen", "name": "Eisen", "pdf": "/menus/eisen.pdf", "description": "Einstiegsmenü für kleinere Anlässe" },
+    { "id": "aluminium", "name": "Aluminium", "pdf": "/menus/aluminium.pdf", "description": "Leichtes Menü mit mediterranen Klassikern" },
+    { "id": "kupfer", "name": "Kupfer", "pdf": "/menus/kupfer.pdf", "description": "Ausgewogenes Drei-Gänge-Erlebnis" },
+    { "id": "silber", "name": "Silber", "pdf": "/menus/silber.pdf", "description": "Gehobenes Menü für besondere Abende" },
+    { "id": "gold", "name": "Gold", "pdf": "/menus/gold.pdf", "description": "Festliches Menü mit Premium-Gerichten" },
+    { "id": "diamant", "name": "Diamant", "pdf": "/menus/diamant.pdf", "description": "Unser exklusivstes Menüangebot" }
+  ]
+}

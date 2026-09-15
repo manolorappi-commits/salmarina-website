@@ -1,0 +1,20 @@
+{
+  "title": "News",
+  "intro": "Neuigkeiten aus der Küche und dem Restaurant.",
+  "items": [
+    {
+      "id": "willkommen",
+      "date": "2026-01-15",
+      "title": "Willkommen bei Salmarina",
+      "excerpt": "Wir freuen uns, Sie in unserem Restaurant in Hombrechtikon begrüssen zu dürfen — mediterrane Küche, herzliche Atmosphäre.",
+      "body": "Ob mittags, abends oder am Sonntag bei Tapas & Paella: Entdecken Sie unsere Speisekarte und reservieren Sie Ihren Tisch."
+    },
+    {
+      "id": "sonntag-tapas",
+      "date": "2026-02-01",
+      "title": "Sonntags Tapas & Paella",
+      "excerpt": "Jeden Sonntag ab 11 Uhr servieren wir Tapas und Paella — der Abend bleibt geschlossen.",
+      "body": "Ideal für einen gemütlichen Sonntag mit Familie und Freunden. Reservierung empfohlen."
+    }
+  ]
+}

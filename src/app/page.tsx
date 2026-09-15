@@ -5,6 +5,13 @@ import { Button } from "@/components/Button";
 import { ReservationForm } from "@/components/ReservationForm";
 import { site } from "@/lib/content";
 
+const homeGrid = [
+  { src: "/gallery/11-salat-frisch.jpg", alt: "Frischer Salat" },
+  { src: "/gallery/04-pasta-vongole.jpg", alt: "Pasta mit Muscheln" },
+  { src: "/gallery/08-grillspiesse.jpg", alt: "Grillspiesse" },
+  { src: "/gallery/07-pinsa-prosciutto.jpg", alt: "Pinsa mit Prosciutto" },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -14,7 +21,7 @@ export default function HomePage() {
         <div className="relative overflow-hidden rounded-xl bg-brand-cream">
           <Image
             src="/images/hero-food.jpg"
-            alt="Mediterrane Gerichte bei Salmarina"
+            alt="Pinsa mit Rohschinken und Rucola bei Salmarina"
             width={1400}
             height={700}
             className="w-full h-[240px] sm:h-[360px] md:h-[440px] object-cover"
@@ -30,7 +37,12 @@ export default function HomePage() {
           {site.home.headline}
         </h1>
         <p className="text-brand-blue/85 leading-relaxed mb-8">{site.home.intro}</p>
-        <Button href="/speisekarte">{site.home.ctaMenu}</Button>
+        <div className="flex flex-wrap justify-center gap-3">
+          <Button href="/speisekarte">{site.home.ctaMenu}</Button>
+          <Button href="/monatskarte" variant="outline">
+            Monatskarte
+          </Button>
+        </div>
       </section>
 
       {/* About + quote */}
@@ -38,7 +50,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
             <Image
-              src="/images/hero-interior.png"
+              src="/images/hero-interior.jpg"
               alt="Ambiente im Restaurant Salmarina"
               fill
               className="object-cover"
@@ -52,8 +64,8 @@ export default function HomePage() {
             </blockquote>
             <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
               <Image
-                src="/gallery/04-pasta.jpg"
-                alt="Pasta bei Salmarina"
+                src="/gallery/06-risotto-crevetten.jpg"
+                alt="Risotto mit Crevetten bei Salmarina"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -67,12 +79,7 @@ export default function HomePage() {
       <section className="bg-brand-rust py-12 md:py-16" aria-label="Impressionen">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid grid-cols-2 gap-3 md:gap-4">
-            {[
-              { src: "/gallery/03-salat.jpg", alt: "Salat" },
-              { src: "/gallery/04-pasta.jpg", alt: "Pasta" },
-              { src: "/gallery/05-fleisch.jpg", alt: "Fleisch und Fisch" },
-              { src: "/gallery/01-pizza.jpg", alt: "Pizza" },
-            ].map((img) => (
+            {homeGrid.map((img) => (
               <div key={img.src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="50vw" />
               </div>

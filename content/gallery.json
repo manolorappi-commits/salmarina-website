@@ -1,16 +1,19 @@
 {
   "title": "Galerie",
-  "intro": "Einblicke in Küche, Teller und Atmosphäre.",
+  "intro": "Einblicke in Küche, Teller und Atmosphäre — frisch aus dem Restaurant Salmarina.",
   "images": [
-    { "src": "/gallery/01-pizza.jpg", "alt": "Frische Pizza bei Salmarina" },
-    { "src": "/gallery/02-interior.png", "alt": "Restaurant-Ambiente" },
-    { "src": "/gallery/03-salat.jpg", "alt": "Salat und Vorspeisen" },
-    { "src": "/gallery/04-pasta.jpg", "alt": "Pasta und Risotto" },
-    { "src": "/gallery/05-fleisch.jpg", "alt": "Fleisch und Fisch" },
-    { "src": "/gallery/06-pizza-ofen.jpg", "alt": "Pizza aus dem Ofen" },
-    { "src": "/gallery/07-dessert.jpg", "alt": "Dessert" },
-    { "src": "/gallery/08-dessert-2.jpg", "alt": "Süsse Nachspeisen" },
-    { "src": "/gallery/09-mittag.jpg", "alt": "Mittagsangebot" },
-    { "src": "/gallery/10-monat.jpg", "alt": "Monatliche Spezialitäten" }
+    { "src": "/gallery/01-pinsa.jpg", "alt": "Frische Pinsa aus dem Ofen bei Salmarina" },
+    { "src": "/gallery/02-interior.jpg", "alt": "Gemütliches Ambiente im Restaurant Salmarina" },
+    { "src": "/gallery/03-garnele-quinoa.jpg", "alt": "Garnelen-Turm mit Quinoa, Avocado und Kirschtomaten" },
+    { "src": "/gallery/04-pasta-vongole.jpg", "alt": "Pasta mit frischen Venusmuscheln, Tomaten und Zitrone" },
+    { "src": "/gallery/05-rucola-mozzarella.jpg", "alt": "Rucola-Salat mit Mozzarella, Kirschtomaten und Balsamico" },
+    { "src": "/gallery/06-risotto-crevetten.jpg", "alt": "Cremiges Risotto mit Riesencrevetten und Steinpilzen" },
+    { "src": "/gallery/07-pinsa-prosciutto.jpg", "alt": "Pinsa mit Tomatensauce, Rohschinken, Rucola und Parmesan" },
+    { "src": "/gallery/08-grillspiesse.jpg", "alt": "Fleischspiesse und Wurst auf dem Holzkohlengrill" },
+    { "src": "/gallery/09-fischfilet.jpg", "alt": "Gebratenes Fischfilet mit Salzkartoffeln, Bohnen und Dill" },
+    { "src": "/gallery/10-tiramisu.jpg", "alt": "Hausgemachtes Tiramisu mit Mascarpone und Kakao" },
+    { "src": "/gallery/11-salat-frisch.jpg", "alt": "Frischer gemischter Salat mit Kirschtomaten und Käse" },
+    { "src": "/gallery/12-penne-pilze.jpg", "alt": "Penne in cremiger Sauce mit Pilzen und Petersilie" },
+    { "src": "/gallery/13-pasta-muscheln.jpg", "alt": "Pasta mit Muscheln und frischen Kräutern" }
   ]
 }

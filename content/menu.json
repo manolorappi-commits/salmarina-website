@@ -1,48 +1,182 @@
 {
   "title": "Speisekarte",
-  "intro": "Unsere Speisekarte — mediterrane Klassiker, frisch zubereitet. Preise und Gerichte können sich ändern; aktuelle Angaben entnehmen Sie den Kartenbildern.",
+  "intro": "Mediterrane Klassiker, frisch zubereitet. Alle Preise in CHF inkl. MwSt. Angaben können sich ändern — aktuelle Spezialitäten finden Sie auch auf der Monatskarte und den Mittagsmenüs.",
+  "note": "Poulet: CH/EU · Kalb: CH/EU · Rind: CH/EU/AU/SA · Schwein: CH/EU · Lamm: CH/AU/NZ/EU. Brot aus der Schweiz.",
   "categories": [
     {
       "id": "salate",
       "title": "Salate & Kleinigkeiten",
       "image": "/menus/salate.jpg",
-      "alt": "Speisekarte Salate und Kleinigkeiten"
+      "alt": "Speisekarte Salate und Kleinigkeiten",
+      "photo": "/gallery/11-salat-frisch.jpg",
+      "items": [
+        { "name": "Grüner Salat (Blättersalat)", "price": "9.50" },
+        { "name": "Gemischter Salat", "price": "10.50" },
+        { "name": "Nüsslisalat mit Ei", "price": "13.50" },
+        { "name": "Tomatensalat «Caprese» mit Mozzarella", "description": "Tomaten & Mozzarella, Basilikum-Olivenöl", "price": "13.50" },
+        { "name": "Caesar Salat", "description": "Mit Pouletbrust und ital. Hartkäse", "price": "22.50" },
+        { "name": "Fitnessteller", "description": "Mit Pouletbrust", "price": "22.50" },
+        { "name": "Salatteller gross", "description": "Grosser gemischter Salat mit Früchten, Avocado, Mozzarella und Ei", "price": "20.50" },
+        { "name": "Tapas zum Teilen", "description": "Ab 2 Personen — div. Bruschettas, Paprikawurst, Käse, frittierte Fische u. a.", "price": "19.50", "priceNote": "pro Person" },
+        { "name": "Jalapeños paniert und frittiert", "price": "12.50" },
+        { "name": "Knoblauchbrot «Pan al Ajillo»", "description": "Hausgemacht nach Manolos Geheimrezept", "price": "10.50" },
+        { "name": "Bruschetta", "description": "Geröstete Brotscheiben mit Tomatenwürfeln und Olivenöl", "price": "11.50" },
+        { "name": "Rohschinkenbrötchen «Pan Catalan»", "description": "Mit Tomaten-Olivenöl und Rohschinken", "price": "13.50" },
+        { "name": "Gemischte Bruschetta", "description": "Knoblibrot, Tomaten-Bruschetta und Pan Catalan", "price": "15.50" },
+        { "name": "Frittierte Calamares", "price": "15.50" },
+        { "name": "Knoblauch-Crevetten", "description": "Für den kleinen Hunger — mit Knoblauch, Olivenöl und Weisswein", "price": "17.50" }
+      ]
     },
     {
       "id": "teigwaren",
       "title": "Teigwaren und Risotto",
       "image": "/menus/teigwaren.jpg",
-      "alt": "Speisekarte Teigwaren und Risotto"
+      "alt": "Speisekarte Teigwaren und Risotto",
+      "photo": "/gallery/04-pasta-vongole.jpg",
+      "subtitle": "Penne, Spaghetti, Nudeln oder Fusilli Velanesi",
+      "items": [
+        { "name": "Manolos", "description": "Tomaten-Curryrahmsauce mit Poulet-Geschnetzeltem", "price": "21.50", "priceSmall": "16.50" },
+        { "name": "Carbonara (Manolo)", "description": "Zwiebel, Speck, Schinken, Rahm, Eigelb und Käse", "price": "21.50", "priceSmall": "16.50" },
+        { "name": "Amatriciana", "description": "Tomatensauce, Speck, Peperoncino, Olivenöl und Käse", "price": "21.50", "priceSmall": "17.50" },
+        { "name": "Paprika", "description": "Paprikarahmsauce mit Poulet-Geschnetzeltem", "price": "21.50", "priceSmall": "16.50" },
+        { "name": "Rindsfleisch", "description": "Angus-Rindsgeschnetzeltes mit Knoblauch, Peperoncino und feinen Kräutern", "price": "25.50", "priceSmall": "21.50" },
+        { "name": "Risotto Steinpilz", "description": "Mit Steinpilz und Käse", "price": "21.50" },
+        { "name": "Risotto Crevetten", "description": "Mit Crevetten und Käse", "price": "22.50" },
+        { "name": "Risotto Steinpilz & Crevetten", "description": "Mit Steinpilz, Crevetten und Käse", "price": "23.50" }
+      ]
     },
     {
       "id": "fleisch-fisch",
       "title": "Fleisch und Fisch",
       "image": "/menus/fleisch-fisch.jpg",
-      "alt": "Speisekarte Fleisch und Fisch"
+      "alt": "Speisekarte Fleisch und Fisch vom Grill",
+      "photo": "/gallery/08-grillspiesse.jpg",
+      "subtitle": "Spezialitäten aus dem Holzkohlengrill / heissem Stein — Beilage inkl. Gemüse und Pommes frites, Teigwaren oder Reis",
+      "items": [
+        { "name": "Fleisch-Grillade", "description": "Rinds, Schweins, Poulet, Salsiccia — 350 g (2. Person CHF 40.00)", "price": "45.50", "priceNote": "pro Person" },
+        { "name": "Rindsfilet 200 g", "description": "Je weitere 100 g CHF 14.00", "price": "50.00" },
+        { "name": "Rindsteak 200 g", "description": "Je weitere 100 g CHF 12.00", "price": "37.00" },
+        { "name": "Schweinsteak 200 g", "description": "Je weitere 100 g CHF 10.00", "price": "31.00" },
+        { "name": "Schweins Secreto 200 g", "description": "Je weitere 100 g CHF 11.00", "price": "33.50" },
+        { "name": "Pouletbrust 200 g", "description": "Je weitere 100 g CHF 10.00", "price": "25.00" },
+        { "name": "Spare Ribs", "description": "Ca. 450 g", "price": "29.50" },
+        { "name": "Fisch-Grillade", "description": "Crevette, Calamari-Steak, Lachs, Octopus u. a.", "price": "40.00" },
+        { "name": "Gambas vom Grill", "description": "7 Stück Riesen-Crevetten", "price": "38.00" },
+        { "name": "Lachs vom Grill", "price": "30.50" },
+        { "name": "Tintenfisch (Calamari-Steak)", "price": "29.50" },
+        { "name": "Octopus vom Grill", "price": "40.00" },
+        { "name": "Wolfsbarschfilet", "price": "32.00" }
+      ]
     },
     {
       "id": "pizza",
       "title": "Pizza",
       "image": "/menus/pizza.jpg",
-      "alt": "Speisekarte Pizza"
+      "alt": "Speisekarte Pizza",
+      "photo": "/gallery/07-pinsa-prosciutto.jpg",
+      "items": [
+        { "name": "Margherita", "description": "Tomaten, Mozzarella, Oregano", "price": "16.50" },
+        { "name": "Crudaiola", "description": "Tomaten, Mozzarella, Oregano, Cherrytomaten, Rucola, ital. Hartkäse", "price": "18.50" },
+        { "name": "Grün", "description": "Tomaten, Mozzarella, Oregano, Broccoli, Spinat, Rucola", "price": "18.50" },
+        { "name": "Funghi", "description": "Tomaten, Mozzarella, Oregano, Champignons", "price": "17.50" },
+        { "name": "Mima", "description": "Tomaten, Mozzarella, Oregano, Cherrytomaten, Rucola, Mascarpone", "price": "18.50" },
+        { "name": "Napoli", "description": "Tomaten, Mozzarella, Oregano, Sardellen, Kapern", "price": "17.50" },
+        { "name": "Picante", "description": "Tomaten, Mozzarella, Oregano, scharfe Salami", "price": "18.50" },
+        { "name": "Tonno", "description": "Tomaten, Mozzarella, Oregano, Thon, Zwiebeln", "price": "19.50" },
+        { "name": "Hawai", "description": "Tomaten, Mozzarella, Oregano, Schinken, Ananas", "price": "19.50" },
+        { "name": "Prosciutto", "description": "Tomaten, Mozzarella, Oregano, Schinken", "price": "19.50" },
+        { "name": "Capricciosa", "description": "Tomaten, Mozzarella, Oregano, Schinken, Champignons, Artischocken, Oliven", "price": "21.50" },
+        { "name": "Toscana", "description": "Tomaten, Mozzarella, Gorgonzola, scharfe Salami, Zwiebeln, ital. Hartkäse", "price": "20.50" },
+        { "name": "Prosciutto & Funghi", "description": "Tomaten, Mozzarella, Oregano, Schinken, Champignons", "price": "20.50" },
+        { "name": "Rohschinken", "description": "Tomaten, Mozzarella, Oregano, Rohschinken", "price": "22.50" },
+        { "name": "Pio Pio", "description": "Tomaten, Mozzarella, Oregano, Pouletwürfel", "price": "20.50" },
+        { "name": "Quattro Stagioni", "description": "Tomaten, Mozzarella, Oregano, Schinken, Champignons, Artischocken, Peperoni, Oliven", "price": "21.50" },
+        { "name": "Gorgonzola", "description": "Tomaten, Mozzarella, Oregano, Gorgonzola", "price": "19.50" },
+        { "name": "Gamberetti", "description": "Tomaten, Mozzarella, Oregano, Crevetten", "price": "21.50" },
+        { "name": "Funghi Porcini", "description": "Tomaten, Mozzarella, Oregano, Steinpilze", "price": "21.50" },
+        { "name": "Funghi Porcini & Gamberetti", "description": "Tomaten, Mozzarella, Oregano, Steinpilze und Crevetten", "price": "22.50" }
+      ]
     },
     {
       "id": "dessert",
       "title": "Dessert",
       "images": ["/menus/dessert-1.jpg", "/menus/dessert-2.jpg"],
-      "alt": "Speisekarte Dessert"
+      "alt": "Speisekarte Dessert und Glacés",
+      "photo": "/gallery/10-tiramisu.jpg",
+      "items": [
+        { "name": "Crema Catalana", "price": "8.50" },
+        { "name": "Passionsfrucht- / Mousse au Chocolat", "price": "7.50" },
+        { "name": "Tiramisu", "price": "8.50" },
+        { "name": "Panna Cotta", "price": "7.50" },
+        { "name": "Glacé / Sorbet", "description": "Pro Kugel — Rahmzuschlag CHF 1.50", "price": "3.50", "priceNote": "pro Kugel" },
+        { "name": "Coupe Chocolate", "description": "Schoggi-Rahmglace mit Rahm", "price": "10.50" },
+        { "name": "Coupe Waldbeeren", "description": "Vanille-Rahmglace mit Waldbeeren und Rahm", "price": "10.50" },
+        { "name": "Coupe Café", "description": "Café-Rahmglace mit Espresso und Rahm", "price": "9.50" },
+        { "name": "Coupe Sunshine", "description": "Vanille-, Erdbeer- und Pistache-Rahmglace mit Rahm", "price": "10.50" },
+        { "name": "Coupe Danmark", "description": "Vanille-Rahmglace mit Choco-Sauce und Rahm", "price": "10.50" },
+        { "name": "Coupe Hawaii", "description": "Vanille- und Café-Rahmglace mit Ananas und Rahm", "price": "10.50" },
+        { "name": "Kinder-Glacé", "price": "5.50" },
+        { "name": "Sorbet mit Schuss", "description": "Apfel, Exotic, Citron oder Zwetschge — mit Prosecco oder Spirituose", "price": "10.50" }
+      ]
     }
   ],
   "monatskarte": {
     "title": "Monatskarte",
-    "intro": "Unsere wechselnde Monatskarte mit saisonalen Spezialitäten. Das Bild ersetzen Sie jederzeit unter public/menus/monatskarte.jpg.",
+    "intro": "Saisonale Spezialitäten — wechselnd und frisch. Unten die aktuelle Karte als Bild und strukturierte Übersicht.",
     "image": "/menus/monatskarte.jpg",
-    "alt": "Aktuelle Monatskarte Salmarina"
+    "download": "/menus/monatskarte-download.jpg",
+    "alt": "Aktuelle Monatskarte Salmarina",
+    "items": [
+      { "name": "Kalte Joghurtsuppe nach Sri-Lanka-Art", "price": "7.50" },
+      { "name": "Nüsslisalat mit Avocado", "price": "12.50" },
+      { "name": "Spanischer Thunfischsalat mit Ei", "price": "12.50", "priceMain": "19.50", "priceNote": "Vorspeise / Hauptspeise" },
+      { "name": "Kreta-Salat mit Fetakäse", "price": "12.50", "priceMain": "19.50", "priceNote": "Vorspeise / Hauptspeise" },
+      { "name": "Mango-Avocado-Salat mit Zwiebeln und Koriander", "price": "15.00" },
+      { "name": "Rohschinken mit Mozzarella", "price": "17.50" },
+      { "name": "Roastbeef (kalt)", "price": "19.50", "priceMain": "29.50", "priceNote": "Vorspeise / Hauptspeise mit Pommes" },
+      { "name": "Vitello tonnato (kalt)", "price": "19.50", "priceMain": "29.50", "priceNote": "Vorspeise / Hauptspeise mit Pommes" },
+      { "name": "Rindstatar (kalt)", "price": "19.50", "priceMain": "29.50", "priceNote": "Vorspeise / Hauptspeise mit Pommes" },
+      { "name": "Kalbsschnitzel grilliert", "description": "Mit Nüsslisalat, Ei und Beilage nach Wahl", "price": "35.50" },
+      { "name": "Kalbsteak an Morchelsauce", "description": "Mit Gemüse und Beilage nach Wahl", "price": "45.50" },
+      { "name": "Handgemachte Ravioli (Limone)", "description": "An leichter Rahmsauce", "price": "26.50" },
+      { "name": "Riesen-Crevetten vom Grill", "description": "Mit Salat und Reis", "price": "27.50" },
+      { "name": "Lachs vom Grill", "description": "Mit Nüsslisalat, Ei und Reis", "price": "27.50" },
+      { "name": "Rindsschnitzel", "description": "Mit Kreta-Salat und Pommes frites", "price": "28.50" },
+      { "name": "Kalbsfilet an Morchelsauce", "description": "Mit Gemüse und Beilage nach Wahl", "price": "52.50" },
+      { "name": "Kalbsgeschnetzeltes Zürcher Art", "description": "Mit Rösti", "price": "33.50" },
+      { "name": "Kalbsschnitzel an Steinpilzsauce", "description": "Mit Gemüse und Beilage nach Wahl", "price": "38.50" },
+      { "name": "Wienerschnitzel (Kalb)", "description": "Mit Beilage nach Wahl", "price": "37.50" },
+      { "name": "Cordon Bleu 200 g", "description": "Mit Beilage nach Wahl", "price": "22.50" }
+    ]
   },
   "mittagsmenus": {
     "title": "Mittagsmenüs",
-    "intro": "Unsere Mittagsangebote von Dienstag bis Freitag. Das Bild ersetzen Sie jederzeit unter public/menus/mittagsmenu.jpg.",
+    "intro": "Dienstag bis Freitag mittags — inkl. Salat oder Suppe und Dessert (gemäss aktueller Wochenkarte).",
     "image": "/menus/mittagsmenu.jpg",
-    "alt": "Aktuelle Mittagsmenüs Salmarina"
+    "download": "/menus/mittagsmenu-download.jpg",
+    "alt": "Aktuelle Mittagsmenüs Salmarina",
+    "items": [
+      { "name": "Mittagspizza zur Auswahl", "price": "15.00" },
+      { "name": "Tagesteller I", "description": "Pouletschenkel-Geschnetzeltes an Knoblisauce mit Pommes", "price": "18.00" },
+      { "name": "Tagesteller II", "description": "Rindsgeschnetzeltes an Cognac-Sauce mit Reis und Gemüse", "price": "25.00" },
+      { "name": "Sri-Lanka-Reis-Curry mit Poulet", "price": "18.00" },
+      { "name": "Big-Big-Hamburger im Pizzabrot", "description": "Mit Käse und Pommes frites", "price": "20.00" },
+      { "name": "Big Piccadilly-Tomatensalat mit Mozzarella", "price": "18.00" },
+      { "name": "Rohschinken mit Melone", "price": "20.00" },
+      { "name": "Felchen-Knusperli", "description": "Aus dem Zürichsee (Männedorf) mit Salat und Reis", "price": "22.00" },
+      { "name": "Roastbeef mit Pommes", "description": "Kalt, mit Tartarsauce", "price": "23.00" },
+      { "name": "Vitello tonnato mit Pommes", "description": "Kalt", "price": "25.00" },
+      { "name": "Kalbbratwurst an Zwiebelsauce", "description": "Mit Pommes frites", "price": "18.00" },
+      { "name": "Fleischkäse mit Pommes und Spiegelei", "price": "18.00" },
+      { "name": "Fischknusperli", "description": "Mit Reis und Tartarsauce", "price": "20.00" },
+      { "name": "Fitnessteller mit Poulet", "price": "20.00" },
+      { "name": "Caesar Salat mit Pouletbrust", "price": "20.00" },
+      { "name": "Kalbsschnitzel an Steinpilzrahmsauce", "description": "Mit Nudeln und Gemüse", "price": "25.00" },
+      { "name": "Teigwaren Manolos", "description": "Poulet-Geschnetzeltes, Curry, Tomatenrahmsauce", "price": "20.00" },
+      { "name": "Nudeln an Paprikarahmsauce", "description": "Mit Pouletbrust-Geschnetzeltem", "price": "20.00" },
+      { "name": "Paniertes Schnitzel mit Pommes", "price": "20.00" },
+      { "name": "Lachs vom Grill", "description": "Mit Nüsslisalat, Ei und Reis", "price": "20.00" },
+      { "name": "Teigwaren mit Crevetten", "description": "An Steinpilzrahmsauce", "price": "20.00" }
+    ]
   }
 }

@@ -38,7 +38,7 @@ export default function MenuevorschlaegePage() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-xl">
               <Image
-                src="/gallery/09-mittag.jpg"
+                src="/gallery/06-risotto-crevetten.jpg"
                 alt="Menüvorschlag Salmarina"
                 fill
                 className="object-cover"

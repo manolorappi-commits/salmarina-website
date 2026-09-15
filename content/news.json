@@ -3,6 +3,20 @@
   "intro": "Neuigkeiten aus der Küche und dem Restaurant.",
   "items": [
     {
+      "id": "mega-party",
+      "date": "2026-05-30",
+      "title": "Mega Party mit Live-Musik",
+      "excerpt": "Samstag 30.05.2026 — Menü ab 18.00 Uhr, Musik ab 20.30 Uhr mit Roby B. und DJ Raffy.",
+      "body": "Reservieren Sie frühzeitig unter www.salmarina.ch oder 078 315 03 15. Menüwahl: Vegi, Schwein, Poulet (CHF 45) oder Kalb (CHF 55)."
+    },
+    {
+      "id": "wochenangebote",
+      "date": "2026-09-15",
+      "title": "Wochenangebote & Mittagskarte",
+      "excerpt": "Schauen Sie vorbei für aktuelle Tages- und Wochenangebote — Mittagsmenüs Di–Fr und wechselnde Monatskarte.",
+      "body": "Die aktuellen Karten finden Sie unter Speisekarte, Monatskarte und Mittagsmenüs. Reservierung empfohlen."
+    },
+    {
       "id": "willkommen",
       "date": "2026-01-15",
       "title": "Willkommen bei Salmarina",

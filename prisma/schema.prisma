@@ -1,13 +1,12 @@
-// Local: SQLite via DATABASE_URL="file:./dev.db"
-// Production (Vercel/Neon): change provider to "postgresql" and set DATABASE_URL to your Postgres URL.
-// See README for switching steps.
+// Neon Postgres — set DATABASE_URL to the pooled Neon URL with sslmode=require.
+// Optional for migrations: DIRECT_URL (non-pooled). See README.
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 

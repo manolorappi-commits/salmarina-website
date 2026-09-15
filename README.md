@@ -8,9 +8,9 @@ Professionelle Website für **Restaurant Salmarina** (Hombrechtikon) — Next.js
 ## Lokal starten
 
 ```bash
-cp .env.example .env   # falls noch kein .env vorhanden
+cp .env.example .env   # Neon DATABASE_URL mit sslmode=require setzen
 npm install
-npm run db:push        # SQLite-Schema anlegen (file:./dev.db)
+npm run db:push        # Schema auf Neon/Postgres anlegen
 npm run db:seed        # Admin-User aus ADMIN_PASSWORD anlegen
 npm run dev
 ```
@@ -31,7 +31,7 @@ Siehe `.env.example`. Wichtige Variablen:
 
 | Variable | Beschreibung |
 |----------|----------------|
-| `DATABASE_URL` | Lokal: `file:./dev.db`. Prod: Postgres/Neon-URL |
+| `DATABASE_URL` | Neon Postgres (pooled) URL mit `sslmode=require` |
 | `ADMIN_USERNAME` | Default `admin` |
 | `ADMIN_PASSWORD` | **Erforderlich** (lokal z. B. `SalmarinaAdmin2026!`) |
 | `SESSION_SECRET` | Langer Zufallsstring für JWT-Cookie |
@@ -68,23 +68,21 @@ Siehe `.env.example`. Wichtige Variablen:
   - **Lokal:** `public/menus/` + Update von `content/menu.json` / `menu-vorschlaege.json`
   - **Vercel:** `@vercel/blob` wenn `BLOB_READ_WRITE_TOKEN` gesetzt; sonst Fehlermeldung
 
-## Datenbank (Prisma)
+## Datenbank (Prisma + Neon Postgres)
 
-Lokal SQLite:
+`prisma/schema.prisma` nutzt `provider = "postgresql"`.
 
-```prisma
-datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
-}
+1. Neon-Projekt anlegen und **pooled** Connection String kopieren (`…-pooler…`, `sslmode=require`).
+2. `DATABASE_URL` in `.env` und in Vercel setzen (Neon URL configured).
+3. Optional: non-pooled URL als `DIRECT_URL` für Migrationen, falls der Pooler Probleme macht.
+4. Schema & Seed:
+
+```bash
+npx prisma db push
+npx prisma db seed   # Admin: ADMIN_USERNAME / ADMIN_PASSWORD
 ```
 
-**Produktion (Vercel + Neon/Postgres):**
-
-1. Neon-Projekt anlegen und Connection String kopieren.
-2. In `prisma/schema.prisma` `provider` auf `"postgresql"` ändern.
-3. `DATABASE_URL` in Vercel auf die Postgres-URL setzen.
-4. Build: `prisma generate` (bereits in `npm run build`) + einmalig `prisma db push` bzw. Migration gegen die Prod-DB.
+Build führt `prisma generate` aus (`npm run build`).
 
 Modelle: `Reservation`, `AdminUser`, `MenuAsset`.
 
@@ -114,10 +112,9 @@ Skripte: `npm run db:push`, `npm run db:seed`, `npm run db:studio`.
 
 1. Repo auf GitHub pushen.
 2. Auf [vercel.com](https://vercel.com) importieren (Framework: Next.js).
-3. Env-Vars setzen: `DATABASE_URL` (Postgres), `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `SESSION_SECRET`, optional `RESEND_API_KEY`, `EMAIL_FROM`, `RESTAURANT_EMAIL`, `BLOB_READ_WRITE_TOKEN`.
-4. Prisma-Provider auf `postgresql` umstellen (siehe oben).
-5. Deploy — danach Admin-Seed gegen Prod-DB ausführen (`npx prisma db push` + `npm run db:seed` mit Prod-`DATABASE_URL`).
-6. Custom Domain: Project → Settings → Domains → `salmarina.ch` / `www`.
+3. Env-Vars setzen: `DATABASE_URL` (Neon pooled + `sslmode=require`), `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `SESSION_SECRET`, optional `RESEND_API_KEY`, `EMAIL_FROM`, `RESTAURANT_EMAIL`, `BLOB_READ_WRITE_TOKEN`.
+4. Deploy — Schema/Seed gegen Prod-DB: `npx prisma db push` + `npm run db:seed` mit Prod-`DATABASE_URL`.
+5. Custom Domain: Project → Settings → Domains → `salmarina.ch` / `www`.
 
 ## Chatbot (Kunden-Assistent)
 
@@ -134,7 +131,7 @@ Floating-Widget auf allen öffentlichen Seiten (nicht unter `/admin`).
 
 - Next.js 15 (App Router) + React 19  
 - TypeScript, Tailwind CSS 4  
-- Prisma + SQLite (lokal) / Postgres (Prod)  
+- Prisma + Neon Postgres  
 - Resend (E-Mail), jose (Admin-Session), bcryptjs, @vercel/blob  
 - Fonts: Fraunces (Serif), DM Sans (Sans)  
 - Sprache: Deutsch (de-CH)  

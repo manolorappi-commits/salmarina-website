@@ -12,6 +12,16 @@
   --color-brand-sea: #E5F3F0;
   --color-brand-foam: #F2F9FC;
   --color-brand-lagoon: #0E6B7A;
+  /* Menu design system — cool coastal luxury */
+  --color-menu-surface: #F8FBFA;
+  --color-menu-surface-soft: #EEF5F3;
+  --color-menu-accent: #0C5F6E;
+  --color-menu-price: #0A5F7A;
+  --color-menu-muted: #4A5C66;
+  --color-menu-divider: #D5E5E3;
+  --color-menu-chip: #0E6B7A;
+  --color-menu-chip-bg: #EAF4F1;
+  --color-menu-metal: #9A7B52;
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
 }
@@ -40,14 +50,14 @@ body {
   color: #0A74AE;
 }
 
-/* Speisekarte / menu hierarchy — larger & bolder */
+/* ── Speisekarte / menu hierarchy ── */
 .menu-category-title {
   font-family: var(--font-serif);
   font-size: clamp(1.875rem, 1.4rem + 1.5vw, 2.75rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.15;
-  color: var(--color-brand-blue);
+  color: var(--color-menu-accent);
 }
 
 .menu-dish-name {
@@ -62,7 +72,7 @@ body {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
-  color: var(--color-brand-blue);
+  color: var(--color-menu-price);
 }
 
 .menu-dish-desc {
@@ -72,8 +82,151 @@ body {
 }
 
 .menu-card {
-  border-radius: 0.875rem;
-  border: 1px solid color-mix(in srgb, var(--color-brand-mint) 18%, transparent);
-  background: color-mix(in srgb, white 88%, var(--color-brand-sea));
-  box-shadow: 0 1px 2px color-mix(in srgb, var(--color-brand-lagoon) 6%, transparent);
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand-lagoon) 10%, transparent);
+  background: color-mix(in srgb, white 92%, var(--color-brand-cream));
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--color-brand-lagoon) 5%, transparent),
+    0 8px 24px color-mix(in srgb, var(--color-brand-lagoon) 4%, transparent);
+}
+
+.menu-card-divider {
+  border-color: color-mix(in srgb, var(--color-brand-lagoon) 10%, transparent);
+}
+
+.menu-link-card {
+  display: block;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand-lagoon) 12%, transparent);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, white 90%, var(--color-brand-sea)),
+    var(--color-menu-surface-soft)
+  );
+  padding: 1.35rem 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--color-brand-lagoon) 4%, transparent);
+}
+
+.menu-link-card:hover {
+  border-color: color-mix(in srgb, var(--color-brand-mint) 45%, transparent);
+  background: white;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--color-brand-lagoon) 8%, transparent);
+}
+
+.menu-nav {
+  border-color: color-mix(in srgb, var(--color-brand-lagoon) 10%, transparent);
+  background: color-mix(in srgb, var(--color-brand-foam) 92%, white);
+}
+
+.menu-chip {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-menu-chip);
+  background: transparent;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.menu-chip:hover {
+  background: var(--color-menu-chip-bg);
+  color: var(--color-brand-mint);
+  border-color: color-mix(in srgb, var(--color-brand-mint) 25%, transparent);
+}
+
+.menu-eyebrow {
+  color: var(--color-brand-mint);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu-tier-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand-lagoon) 11%, transparent);
+  background: color-mix(in srgb, white 94%, var(--color-brand-cream));
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--color-brand-lagoon) 5%, transparent);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-tier-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-brand-mint);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.menu-tier-card:hover {
+  border-color: color-mix(in srgb, var(--color-brand-mint) 40%, transparent);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--color-brand-lagoon) 8%, transparent);
+  transform: translateY(-1px);
+}
+
+.menu-tier-card[data-tier="silber"]::before,
+.menu-tier-card[data-tier="aluminium"]::before {
+  background: color-mix(in srgb, var(--color-brand-lagoon) 55%, #94A3B8);
+}
+
+.menu-tier-card[data-tier="kupfer"]::before,
+.menu-tier-card[data-tier="gold"]::before {
+  background: var(--color-menu-metal);
+}
+
+.menu-tier-card[data-tier="diamant"]::before {
+  background: linear-gradient(180deg, var(--color-menu-accent), var(--color-menu-metal));
+  width: 4px;
+}
+
+.menu-tier-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-menu-accent);
+  letter-spacing: -0.01em;
+}
+
+.menu-tier-card[data-tier="gold"] .menu-tier-name,
+.menu-tier-card[data-tier="diamant"] .menu-tier-name {
+  color: color-mix(in srgb, var(--color-menu-accent) 70%, var(--color-menu-metal));
+}
+
+.menu-pdf-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 9999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-menu-accent);
+  background: var(--color-menu-chip-bg);
+  border: 1px solid color-mix(in srgb, var(--color-brand-mint) 22%, transparent);
+}
+
+.menu-section-panel {
+  border-radius: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand-lagoon) 10%, transparent);
+  background: linear-gradient(
+    165deg,
+    var(--color-menu-surface) 0%,
+    color-mix(in srgb, white 85%, var(--color-brand-sea)) 100%
+  );
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--color-brand-lagoon) 5%, transparent);
 }

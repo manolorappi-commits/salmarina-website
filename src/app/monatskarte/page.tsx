@@ -23,7 +23,7 @@ export default function MonatskartePage() {
   const download = "download" in m && typeof m.download === "string" ? m.download : m.image;
 
   return (
-    <div className="pb-20">
+    <div className="pb-20 bg-menu-surface/40">
       <PageHero title={m.title} intro={m.intro} />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-12">
         <div>
@@ -32,12 +32,12 @@ export default function MonatskartePage() {
             <a
               href={download}
               download
-              className="text-brand-lagoon underline underline-offset-4 hover:text-brand-mint"
+              className="text-menu-accent underline underline-offset-4 hover:text-brand-mint"
             >
               Monatskarte herunterladen
             </a>
             {" · "}
-            <Link href="/speisekarte" className="text-brand-ink/60 underline underline-offset-4 hover:text-brand-mint">
+            <Link href="/speisekarte" className="text-menu-muted underline underline-offset-4 hover:text-brand-mint">
               Zur Speisekarte
             </Link>
           </p>
@@ -48,21 +48,21 @@ export default function MonatskartePage() {
             <h2 className="menu-category-title mb-6 text-center text-[1.75rem] md:text-[2rem]">
               Übersicht
             </h2>
-            <ul className="menu-card px-5 sm:px-7 divide-y divide-brand-mint/15">
+            <ul className="menu-card px-5 sm:px-7 divide-y divide-menu-divider">
               {items.map((item) => (
                 <li key={item.name} className="py-5 flex justify-between gap-4 items-baseline">
                   <div>
                     <p className="menu-dish-name">{item.name}</p>
                     {item.description && <p className="menu-dish-desc mt-1">{item.description}</p>}
                     {item.priceNote && (
-                      <p className="text-xs text-brand-ink/50 mt-1 font-medium">{item.priceNote}</p>
+                      <p className="text-xs text-menu-muted mt-1 font-medium">{item.priceNote}</p>
                     )}
                   </div>
                   <p className="menu-dish-price shrink-0">
                     {item.priceMain ? (
                       <>
                         CHF {item.price}
-                        <span className="text-brand-ink/30 mx-1 font-normal">/</span>
+                        <span className="text-menu-muted/40 mx-1 font-normal">/</span>
                         CHF {item.priceMain}
                       </>
                     ) : (

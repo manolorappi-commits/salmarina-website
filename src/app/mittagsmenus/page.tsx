@@ -21,7 +21,7 @@ export default function MittagsmenusPage() {
   const download = "download" in m && typeof m.download === "string" ? m.download : m.image;
 
   return (
-    <div className="pb-20">
+    <div className="pb-20 bg-menu-surface/40">
       <PageHero title={m.title} intro={m.intro} />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-12">
         <div>
@@ -30,12 +30,12 @@ export default function MittagsmenusPage() {
             <a
               href={download}
               download
-              className="text-brand-lagoon underline underline-offset-4 hover:text-brand-mint"
+              className="text-menu-accent underline underline-offset-4 hover:text-brand-mint"
             >
               Mittagsmenü herunterladen
             </a>
             {" · "}
-            <Link href="/speisekarte" className="text-brand-ink/60 underline underline-offset-4 hover:text-brand-mint">
+            <Link href="/speisekarte" className="text-menu-muted underline underline-offset-4 hover:text-brand-mint">
               Zur Speisekarte
             </Link>
           </p>
@@ -46,7 +46,7 @@ export default function MittagsmenusPage() {
             <h2 className="menu-category-title mb-6 text-center text-[1.75rem] md:text-[2rem]">
               Wochenübersicht
             </h2>
-            <ul className="menu-card px-5 sm:px-7 divide-y divide-brand-mint/15">
+            <ul className="menu-card px-5 sm:px-7 divide-y divide-menu-divider">
               {items.map((item) => (
                 <li key={item.name} className="py-5 flex justify-between gap-4 items-baseline">
                   <div>
@@ -57,7 +57,7 @@ export default function MittagsmenusPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-center text-sm text-brand-ink/50">
+            <p className="mt-5 text-center text-sm text-menu-muted">
               Die Wochenkarte wechselt — bitte auch das Bild oben beachten.
             </p>
           </section>

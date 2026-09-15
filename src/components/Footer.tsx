@@ -34,7 +34,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <p className="font-serif text-3xl mb-4 text-brand-blue">{site.name}</p>
+            <p className="font-serif text-4xl font-semibold mb-4 text-brand-blue">{site.name}</p>
             <h2 className="font-serif text-xl mb-3 text-brand-blue">Kontakt</h2>
             <address className="not-italic text-sm leading-relaxed space-y-1 text-brand-ink/80">
               <p>{site.address.full}</p>

@@ -20,7 +20,7 @@ export function Header() {
         <div className="flex items-center justify-between gap-4 py-4 md:py-5">
           <Link
             href="/"
-            className="font-serif text-3xl md:text-4xl text-brand-blue tracking-tight shrink-0"
+            className="font-serif text-4xl md:text-5xl font-semibold text-brand-blue tracking-tight shrink-0"
             onClick={() => setOpen(false)}
           >
             {site.name}
@@ -52,7 +52,7 @@ export function Header() {
             )}
             aria-label="Hauptnavigation"
           >
-            <ul className="flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-end gap-1 md:gap-x-4 lg:gap-x-5 px-4 py-3 md:p-0">
+            <ul className="flex flex-col md:flex-row md:flex-wrap md:items-center md:justify-end gap-1 md:gap-x-3 lg:gap-x-4 px-4 py-3 md:p-0">
               {site.nav.map((item) => {
                 const active =
                   item.href === "/"
@@ -63,10 +63,10 @@ export function Header() {
                     <Link
                       href={item.href}
                       className={cn(
-                        "block py-2 md:py-1 text-sm tracking-wide transition-colors rounded-full md:px-1",
+                        "block py-2 md:py-1 text-base md:text-[1.05rem] tracking-wide transition-colors rounded-full md:px-1",
                         active
-                          ? "text-brand-lagoon font-semibold"
-                          : "text-brand-ink/70 hover:text-brand-mint",
+                          ? "text-brand-lagoon font-bold"
+                          : "text-brand-ink/80 font-semibold hover:text-brand-mint",
                       )}
                       aria-current={active ? "page" : undefined}
                       onClick={() => setOpen(false)}

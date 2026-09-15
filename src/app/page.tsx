@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Button } from "@/components/Button";
+import { OpeningStatusBadge } from "@/components/OpeningStatusBadge";
 import { ReservationForm } from "@/components/ReservationForm";
 import { site } from "@/lib/content";
 
@@ -17,7 +18,10 @@ export default function HomePage() {
     <>
       {/* Welcome + hero */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 pt-12 md:pt-16">
-        <p className="font-serif text-brand-mint text-lg md:text-xl mb-7">{site.home.welcome}</p>
+        <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <p className="font-serif text-brand-mint text-lg md:text-xl">{site.home.welcome}</p>
+          <OpeningStatusBadge className="sm:items-end sm:text-right" />
+        </div>
         <div className="relative overflow-hidden rounded-2xl bg-brand-sea ring-1 ring-brand-mint/15">
           <Image
             src="/images/hero-food.jpg"

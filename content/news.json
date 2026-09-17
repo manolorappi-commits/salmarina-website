@@ -1,34 +1,30 @@
 {
   "title": "News",
-  "intro": "Neuigkeiten aus der Küche und dem Restaurant.",
+  "intro": "Aktuelle Events und Angebote aus dem Restaurant Salmarina.",
   "items": [
     {
-      "id": "mega-party",
+      "id": "mega-party-2026-09-12",
+      "date": "2026-09-12",
+      "title": "Party am 12. September mit Roby B. und DJ Raffy",
+      "excerpt": "Samstag 12.09.2026 — Musik ab 20.30 Uhr mit Roby B. und DJ Raffy.",
+      "body": "Feiern Sie mit uns an der Eichtalstrasse 53 in Hombrechtikon. Reservationen unter www.salmarina.ch oder 078 315 0 315.",
+      "image": "/news/mega-party-rafi-roby-2026-09-12.png"
+    },
+    {
+      "id": "mega-party-2026-05-30",
       "date": "2026-05-30",
-      "title": "Mega Party mit Live-Musik",
-      "excerpt": "Samstag 30.05.2026 — Menü ab 18.00 Uhr, Musik ab 20.30 Uhr mit Roby B. und DJ Raffy.",
-      "body": "Reservieren Sie frühzeitig unter www.salmarina.ch oder 078 315 03 15. Menüwahl: Vegi, Schwein, Poulet (CHF 45) oder Kalb (CHF 55)."
+      "title": "Mega Party am 30. Mai mit Roby B. und DJ Raffy",
+      "excerpt": "Samstag 30.05.2026 — Menü ab 18.00 Uhr, Musik ab 20.30 Uhr.",
+      "body": "Menü: gemischter Salat & Bruschetta, Schnitzel an Steinpilzrahmsauce mit Nudeln und Gemüse, Panna Cotta mit Waldbeeren. Vegi, Schwein oder Poulet CHF 45 / Kalb CHF 55. Reservationen unter www.salmarina.ch oder 078 315 0 315.",
+      "image": "/news/mega-party-2026-05-30.jpg"
     },
     {
-      "id": "wochenangebote",
-      "date": "2026-09-15",
-      "title": "Wochenangebote & Mittagskarte",
-      "excerpt": "Schauen Sie vorbei für aktuelle Tages- und Wochenangebote — Mittagsmenüs Di–Fr und wechselnde Monatskarte.",
-      "body": "Die aktuellen Karten finden Sie unter Speisekarte, Monatskarte und Mittagsmenüs. Reservierung empfohlen."
-    },
-    {
-      "id": "willkommen",
-      "date": "2026-01-15",
-      "title": "Willkommen bei Salmarina",
-      "excerpt": "Wir freuen uns, Sie in unserem Restaurant in Hombrechtikon begrüssen zu dürfen — mediterrane Küche, herzliche Atmosphäre.",
-      "body": "Ob mittags, abends oder am Sonntag bei Tapas & Paella: Entdecken Sie unsere Speisekarte und reservieren Sie Ihren Tisch."
-    },
-    {
-      "id": "sonntag-tapas",
-      "date": "2026-02-01",
-      "title": "Sonntags Tapas & Paella",
-      "excerpt": "Jeden Sonntag ab 11 Uhr servieren wir Tapas und Paella — der Abend bleibt geschlossen.",
-      "body": "Ideal für einen gemütlichen Sonntag mit Familie und Freunden. Reservierung empfohlen."
+      "id": "monatsangebot-mai-2026",
+      "date": "2026-05-01",
+      "title": "Monatsangebot Mai 2026 — Wochenangebote",
+      "excerpt": "Di–So Spezialitäten zu Aktionspreisen: Wiener Schnitzel, Kalbsfilet, Cordon Bleu, Rindsfilet, Fajitas und Sonntags Tapas & Paella.",
+      "body": "Dienstag Wiener Schnitzel (Kalb) CHF 29, Mittwoch Kalbsfilet an Steinpilzrahmsauce CHF 32, Donnerstag Cordon Bleu inkl. Beilage CHF 25.50, Freitag Rindsfilet auf dem heissen Stein CHF 38, Samstag Fajitas CHF 28, Sonntag Tapas & Paella CHF 40. Reservationen unter www.salmarina.ch oder 078 315 0 315.",
+      "image": "/news/monatsangebot-mai-2026.jpg"
     }
   ]
 }

@@ -4,6 +4,7 @@ import { site } from "@/lib/content";
 const paths = [
   "",
   "/speisekarte",
+  "/weinkarte",
   "/monatskarte",
   "/mittagsmenus",
   "/menuevorschlaege",

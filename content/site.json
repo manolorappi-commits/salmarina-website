@@ -18,21 +18,64 @@
     "facebook": "https://www.facebook.com/restaurantzeughausgrill/?locale=de_DE"
   },
   "hours": [
-    { "days": "Mo", "text": "Ruhetag" },
-    { "days": "Di–Fr", "text": "11–14 Uhr / ab 17 Uhr" },
-    { "days": "Sa", "text": "ab 17 Uhr" },
-    { "days": "So", "text": "Tapas & Paella ab 11 Uhr (abends geschlossen)" }
+    {
+      "days": "Mo",
+      "text": "Ruhetag"
+    },
+    {
+      "days": "Di–Fr",
+      "text": "11–14 Uhr / ab 17 Uhr"
+    },
+    {
+      "days": "Sa",
+      "text": "ab 17 Uhr"
+    },
+    {
+      "days": "So",
+      "text": "Tapas & Paella ab 11 Uhr (abends geschlossen)"
+    }
   ],
   "nav": [
-    { "label": "Start", "href": "/" },
-    { "label": "Speisekarte", "href": "/speisekarte" },
-    { "label": "Monatskarte", "href": "/monatskarte" },
-    { "label": "Mittagsmenüs", "href": "/mittagsmenus" },
-    { "label": "Menüvorschläge", "href": "/menuevorschlaege" },
-    { "label": "News", "href": "/news" },
-    { "label": "Galerie", "href": "/galerie" },
-    { "label": "Kontakt", "href": "/kontakt" },
-    { "label": "Reservierungen", "href": "/reservierungen" }
+    {
+      "label": "Start",
+      "href": "/"
+    },
+    {
+      "label": "Speisekarte",
+      "href": "/speisekarte"
+    },
+    {
+      "label": "Weinkarte",
+      "href": "/weinkarte"
+    },
+    {
+      "label": "Monatskarte",
+      "href": "/monatskarte"
+    },
+    {
+      "label": "Mittagsmenüs",
+      "href": "/mittagsmenus"
+    },
+    {
+      "label": "Menüvorschläge",
+      "href": "/menuevorschlaege"
+    },
+    {
+      "label": "News",
+      "href": "/news"
+    },
+    {
+      "label": "Galerie",
+      "href": "/galerie"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/kontakt"
+    },
+    {
+      "label": "Reservierungen",
+      "href": "/reservierungen"
+    }
   ],
   "home": {
     "welcome": "Willkommen bei Salmarina",

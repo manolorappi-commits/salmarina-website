@@ -67,7 +67,7 @@ export default function SpeisekartePage() {
 
       {/* Quick links */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 mb-12">
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link href="/monatskarte" className="menu-link-card">
             <p className="font-serif text-xl font-semibold text-menu-accent">{menu.monatskarte.title}</p>
             <p className="text-sm text-menu-muted mt-1.5">Saisonale Spezialitäten ansehen →</p>
@@ -75,6 +75,10 @@ export default function SpeisekartePage() {
           <Link href="/mittagsmenus" className="menu-link-card">
             <p className="font-serif text-xl font-semibold text-menu-accent">{menu.mittagsmenus.title}</p>
             <p className="text-sm text-menu-muted mt-1.5">Di–Fr Mittagsangebote ansehen →</p>
+          </Link>
+          <Link href="/weinkarte" className="menu-link-card sm:col-span-2 lg:col-span-1">
+            <p className="font-serif text-xl font-semibold text-menu-accent">Weinkarte</p>
+            <p className="text-sm text-menu-muted mt-1.5">20 handverlesene Rotweine ansehen →</p>
           </Link>
         </div>
       </div>

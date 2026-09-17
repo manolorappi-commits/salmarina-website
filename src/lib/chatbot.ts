@@ -1,6 +1,7 @@
 import { site } from "@/lib/content";
 import menu from "../../content/menu.json";
 import menuVorschlaege from "../../content/menu-vorschlaege.json";
+import wine from "../../content/wine.json";
 import reservationsConfig from "../../content/reservations.json";
 
 export type ChatRole = "bot" | "user";
@@ -46,7 +47,7 @@ export function welcomeMessage(): ChatMessage {
     id: uid(),
     role: "bot",
     text:
-      `Grüezi! Ich bin der Salmarina-Assistent. Fragen Sie mich zu Öffnungszeiten, Speisekarte, Mittagsmenü, Monatskarte oder Reservierungen — ich helfe gerne.`,
+      `Grüezi! Ich bin der Salmarina-Assistent. Fragen Sie mich zu Öffnungszeiten, Speisekarte, Weinkarte, Mittagsmenü, Monatskarte oder Reservierungen — ich helfe gerne.`,
     links: [
       { href: "/reservierungen", label: "Tisch reservieren" },
       { href: "/speisekarte", label: "Speisekarte" },
@@ -76,6 +77,7 @@ type Intent =
   | "lunch"
   | "monthly"
   | "suggestions"
+  | "wine"
   | "reserve"
   | "contact"
   | "location"
@@ -104,6 +106,7 @@ function detectIntent(raw: string): Intent {
   if (/menuevorschlag|menuvorschlag|anlass|feier|firmenevent|eisen|diamant/.test(t)) {
     return "suggestions";
   }
+  if (/weinkarte|weinliste|rotwein|\bwein\b|wine list/.test(t)) return "wine";
   if (/speisekarte|karte|pizza|pasta|essen|gerichte|allerg/.test(t)) return "menu";
   if (
     /reserv|tisch|buch(en|ung)|platz|table|party|personen|anmeld/.test(t)
@@ -186,7 +189,7 @@ export function handleUserMessage(
           {
             id: uid(),
             role: "bot",
-            text: "Ich kann Auskunft geben zu:\n• Öffnungszeiten\n• Speisekarte / Pizza & Pasta\n• Mittagsmenü & Monatskarte\n• Menüvorschläge für Anlässe\n• Reservierungen (auch direkt hier im Chat)\n• Adresse & Kontakt",
+            text: "Ich kann Auskunft geben zu:\n• Öffnungszeiten\n• Speisekarte / Pizza & Pasta\n• Weinkarte\n• Mittagsmenü & Monatskarte\n• Menüvorschläge für Anlässe\n• Reservierungen (auch direkt hier im Chat)\n• Adresse & Kontakt",
             links: [
               { href: "/reservierungen", label: "Reservierungsseite" },
               { href: "/kontakt", label: "Kontakt" },
@@ -253,6 +256,21 @@ export function handleUserMessage(
           },
         ],
       };
+    case "wine":
+      return {
+        state,
+        messages: [
+          {
+            id: uid(),
+            role: "bot",
+            text: `${wine.title}: ${wine.intro} Regionen: ${wine.categories.map((c) => c.title).join(", ")}. PDF unter ${wine.pdf}.`,
+            links: [
+              { href: "/weinkarte", label: "Weinkarte ansehen" },
+              { href: wine.pdf, label: "Weinkarte PDF" },
+            ],
+          },
+        ],
+      };
     case "menu":
       return {
         state,
@@ -263,6 +281,7 @@ export function handleUserMessage(
             text: menuText(),
             links: [
               { href: "/speisekarte", label: "Speisekarte" },
+              { href: "/weinkarte", label: "Weinkarte" },
               { href: "/monatskarte", label: "Monatskarte" },
               { href: "/mittagsmenus", label: "Mittagsmenüs" },
             ],

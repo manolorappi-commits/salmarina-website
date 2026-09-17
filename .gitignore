@@ -50,3 +50,6 @@ next-env.d.ts
 /prisma/*.db-journal
 .env*
 !.env.example
+
+# wine extraction scratch
+content/weinkarte-raw.txt

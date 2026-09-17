@@ -1,0 +1,263 @@
+{
+  "title": "Weinkarte",
+  "intro": "Ausgewählte Rotweine aus Spanien, Italien und Portugal · 20 handverlesene Positionen",
+  "pdf": "/menus/weinkarte.pdf",
+  "note": "Alle Preise in CHF inkl. MwSt. · Jahrgänge und Preise gemäss aktueller Verfügbarkeit.",
+  "categories": [
+    {
+      "id": "ribera-del-duero",
+      "title": "Ribera del Duero",
+      "subtitle": "Kraft, Tiefe und elegante Fassreife",
+      "wines": [
+        {
+          "name": "Portia Crianza",
+          "price": "58",
+          "vintage": "2019",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Brombeere, Heidelbeere, reife Kirsche und feine Vanille.",
+          "taste": "Vollmundig, saftig und würzig; geschmeidiges Tannin, Toast und ein langer Abgang.",
+          "aging": "Gärung im Edelstahltank; 10 Monate französische und 2 Monate amerikanische Eiche.",
+          "history": "Portia gehört zur traditionsreichen Faustino-Gruppe. Das sternförmige Weingut wurde von Foster + Partners entworfen: Drei Flügel für Gärung, Ausbau und Lagerung führen zu einem zentralen Kern. Architektur und Weinbereitung folgen damit derselben klaren Ordnung."
+        },
+        {
+          "name": "Aalto",
+          "price": "99",
+          "vintage": "2021",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Schwarze Kirsche, Cassis, Veilchen, Kakao und edle Röstaromen.",
+          "taste": "Dicht und kraftvoll, dabei präzise; reifes Tannin und ein sehr langer, mineralischer Nachhall.",
+          "aging": "Rund 17 Monate in Eiche (85 % französisch, 15 % amerikanisch); etwa 50 % neue Fässer.",
+          "history": "Aalto wurde 1999 von Mariano García und Javier Zaccagnini gegründet. Die Idee: alte Tinto-Fino-Parzellen aus verschiedenen Dörfern der Ribera zusammenzuführen. So entsteht kein Wein eines einzelnen Ortes, sondern ein konzentriertes Bild der gesamten Region."
+        },
+        {
+          "name": "Arzuaga Crianza",
+          "price": "68",
+          "vintage": "2021",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Reife Pflaume, Waldbeeren, Lakritz, Vanille und Zedernholz.",
+          "taste": "Rund und samtig mit warmer Frucht, feiner Würze und harmonisch eingebundener Eiche.",
+          "aging": "Je nach Jahrgang etwa 14–16 Monate in französischer und amerikanischer Eiche.",
+          "history": "Florentino Arzuaga gründete das Familienweingut Anfang der 1990er-Jahre auf der Finca La Planta. Die hoch gelegenen Weinberge rund um Quintanilla de Onésimo prägen den Crianza mit kühlen Nächten, langsamer Reife und einer Verbindung aus Kraft und Frische."
+        },
+        {
+          "name": "Protos Crianza",
+          "price": "62",
+          "vintage": "2020",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Rote und schwarze Früchte, süsse Gewürze, Vanille und Toast.",
+          "taste": "Fruchtbetont, ausgewogen und seidig; lebendige Frische und ein anhaltend würziger Schluss.",
+          "aging": "12 Monate französische und amerikanische Eiche; danach rund 24 Monate Flaschenreife.",
+          "history": "1927 gründeten elf Freunde aus Peñafiel gemeinsam eine Kellerei, um den Wein ihrer Heimat bekannt zu machen. Sie nannten sie Protos – griechisch für «der Erste». Das Weingut wurde zu einem Wegbereiter der späteren Herkunftsbezeichnung Ribera del Duero."
+        }
+      ]
+    },
+    {
+      "id": "rioja",
+      "title": "Rioja",
+      "subtitle": "Klassische Reife, seidige Frucht, feine Würze",
+      "wines": [
+        {
+          "name": "Marqués de Cáceres Crianza",
+          "price": "48",
+          "vintage": "2022",
+          "region": "Rioja, Spanien",
+          "size": "75 cl",
+          "bouquet": "Kirsche, Himbeere, rote Johannisbeere und ein Hauch Vanille.",
+          "taste": "Saftig und zugänglich mit milder Würze, runden Tanninen und sauberem Fruchtausklang.",
+          "aging": "12 Monate Eiche (60 % französisch, 40 % amerikanisch); mindestens 12 Monate Flaschenreife.",
+          "history": "Enrique Forner gründete Marqués de Cáceres 1970 in Cenicero. Erfahrungen aus Bordeaux verband er mit Rioja-Trauben und einem damals modernen, fruchtbetonten Stil. Der Crianza wurde zum zugänglichen Klassiker des Hauses: klare Frucht, behutsame Fassreife und feine Würze."
+        },
+        {
+          "name": "Marqués de Cáceres Reserva",
+          "price": "64",
+          "vintage": "2020",
+          "region": "Rioja, Spanien",
+          "size": "75 cl",
+          "bouquet": "Dunkle Kirsche, Pflaume, Tabak, Vanille und balsamische Kräuter.",
+          "taste": "Elegant und tief mit seidigem Tannin, würziger Eiche und langem, reifem Finale.",
+          "aging": "20 Monate französische Eiche; anschliessend mindestens 24 Monate Flaschenreife.",
+          "history": "Die Familie Forner brachte französische Kellererfahrung in die Rioja und setzte früh auf saubere Frucht sowie fein dosierten Holzeinsatz. Für die Reserva werden geeignete Partien länger ausgebaut. Fass- und Flaschenreife geben ihr zusätzliche Tiefe, ohne die Frucht zu überdecken."
+        },
+        {
+          "name": "Ramón Bilbao Reserva",
+          "price": "62",
+          "vintage": "2018",
+          "region": "Rioja, Spanien",
+          "size": "75 cl",
+          "bouquet": "Schwarze Früchte, getrocknete Kräuter, Zeder, Kokos und süsse Gewürze.",
+          "taste": "Geschmeidig und strukturiert; reife Frucht, feinkörniges Tannin und ein würziger Nachhall.",
+          "aging": "20 Monate amerikanische Eiche; anschliessend etwa 20 Monate Flaschenreife.",
+          "history": "Ramón Bilbao gründete seine Bodega 1924 in Haro, dem historischen Zentrum der Rioja Alta. Das Haus entwickelte sich aus einer kleinen Familienkellerei. Bis heute verbindet die Reserva traditionelle Reife mit einem klaren, fruchtbetonten und präzisen Rioja-Stil."
+        },
+        {
+          "name": "Barón de Ley Reserva",
+          "price": "64",
+          "vintage": "2019",
+          "region": "Rioja, Spanien",
+          "size": "75 cl",
+          "bouquet": "Reife Beeren, Pflaume, Vanille, Leder und mediterrane Kräuter.",
+          "taste": "Samtig, würzig und ausgewogen; elegante Reife mit langem, warmem Finish.",
+          "aging": "20 Monate neue amerikanische Eiche; danach rund 24 Monate Flaschenreife.",
+          "history": "Barón de Ley arbeitet nach dem Château-Prinzip: Weinberge, Keller und Reifung liegen auf demselben Gut. Zentrum ist ein ehemaliges Benediktinerkloster in Mendavia. Diese geschlossene Herkunft prägt eine Reserva mit klassischer Rioja-Reife und eigener Handschrift."
+        }
+      ]
+    },
+    {
+      "id": "ribera-reife",
+      "title": "Ribera – Reife Auswahl",
+      "subtitle": "Tempranillo in vier ausdrucksstarken Facetten",
+      "wines": [
+        {
+          "name": "Tamaral Crianza",
+          "price": "58",
+          "vintage": "2020",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Brombeere, Kirsche, Veilchen, Vanille und feine Röstnoten.",
+          "taste": "Kräftig, rund und saftig mit reifem Tannin und würzigem, anhaltendem Ausklang.",
+          "aging": "Gärung und Mazeration im Edelstahl bei 26 °C; 14 Monate französische und amerikanische Eiche.",
+          "history": "Tamaral ist ein Familienweingut bei Peñafiel, umgeben von der kargen Hochebene der Ribera del Duero. Der Crianza zeigt den Einstieg in den Hausstil: Tinta del País, klare dunkle Frucht und Fassreife, die Struktur gibt, ohne den Wein schwer zu machen."
+        },
+        {
+          "name": "Tamaral Reserva",
+          "price": "72",
+          "vintage": "2019",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Schwarze Kirsche, Cassis, Zeder, Kakao, Tabak und balsamische Noten.",
+          "taste": "Dicht und elegant mit poliertem Tannin, reifer Frucht und langem, würzigem Finale.",
+          "aging": "Gärung und Mazeration im Edelstahl bei 26 °C; 24 Monate französische und amerikanische Eiche.",
+          "history": "Für die Reserva wählt Tamaral reifere, konzentrierte Partien und gibt ihnen mehr Zeit im Fass und in der Flasche. Aus der jugendlichen Frucht des Tempranillo entwickeln sich Tabak, Zeder und balsamische Noten – ein ruhigerer, tieferer Ausdruck der Bodega."
+        },
+        {
+          "name": "Tamaral Gran Reserva",
+          "price": "88",
+          "vintage": "2016",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Dunkle Früchte, Trockenpflaume, Leder, Kaffee und edle Gewürze.",
+          "taste": "Komplex und gereift, mit samtiger Textur, feiner Säure und sehr langem Nachhall.",
+          "aging": "Gärung und Mazeration im Edelstahl bei 26 °C; 24 Monate Eiche, danach lange Flaschenreife.",
+          "history": "Die Gran Reserva ist die gereifte Spitze der klassischen Tamaral-Linie. Nur passende Jahrgänge erhalten die lange Entwicklung in Holz und Flasche. Dabei wandelt sich die Primärfrucht in Leder, Kaffee und Trockenfrucht – ein Wein, der Zeit nicht versteckt, sondern zeigt."
+        },
+        {
+          "name": "Celeste Crianza",
+          "price": "62",
+          "vintage": "2022",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Brombeere, Heidelbeere, Veilchen, schwarzer Pfeffer und Vanille.",
+          "taste": "Frisch und konzentriert, mit reifer Frucht, geschliffenem Tannin und würziger Länge.",
+          "aging": "Gärung ca. 1 Woche im Edelstahl; 12 Monate Eiche, danach mindestens 12 Monate Flaschenreife.",
+          "history": "Celeste gehört zur Weinwelt der Familie Torres. Der Name erinnert an den tiefblauen, sternklaren Himmel über den hoch gelegenen Weinbergen der Ribera del Duero. Die kühlen Nächte bewahren Frische und geben dem kraftvollen Tempranillo eine elegante Kontur."
+        }
+      ]
+    },
+    {
+      "id": "spanische-charakterweine",
+      "title": "Spanische Charakterweine",
+      "subtitle": "Vom Schiefer des Priorat bis zu alten Reben in Jumilla",
+      "wines": [
+        {
+          "name": "Nassos",
+          "price": "69",
+          "vintage": "2019",
+          "region": "Priorat, Spanien",
+          "size": "75 cl",
+          "bouquet": "Reife Kirsche, Brombeere, Kakao, Gewürze und mineralischer Schiefer.",
+          "taste": "Kräftig und cremig, mit dunkler Frucht, präsenter Struktur und langem, warmem Finale.",
+          "aging": "Malolaktische Gärung; 12 Monate in 300-/500-Liter-Fässern aus französischer und amerikanischer Eiche.",
+          "history": "Nassos stammt aus dem Priorat, wo Reben auf steilen Terrassen und dem dunklen Schieferboden «Llicorella» wachsen. Die kargen Böden zwingen die Wurzeln in die Tiefe. Kleine Erträge und mediterrane Wärme erklären die konzentrierte Frucht und mineralische Spannung."
+        },
+        {
+          "name": "Juan Gil Silver Label",
+          "price": "65",
+          "vintage": "2022",
+          "region": "Jumilla, Spanien",
+          "size": "75 cl",
+          "bouquet": "Brombeere, schwarze Kirsche, Lakritz, Kakao und rauchige Gewürze.",
+          "taste": "Üppig und samtig, mit reifer Monastrell-Frucht, Wärme und einem langen, würzigen Abgang.",
+          "aging": "Malolaktische Gärung im Holz; rund 12 Monate in französischer Eiche.",
+          "history": "Die Familie Gil ist seit 1916 mit dem Weinbau in Jumilla verbunden. Alte Monastrell-Reben wachsen dort als Buschreben in trockenem, heissem Klima. Sie liefern wenige, kleine Beeren mit intensiver Frucht – die Grundlage für den kraftvollen Stil des Silver Label."
+        },
+        {
+          "name": "Museum Reserva",
+          "price": "66",
+          "vintage": "2019",
+          "region": "Cigales, Spanien",
+          "size": "75 cl",
+          "bouquet": "Schwarze Früchte, Pflaume, Veilchen, Lakritz, Tabak und Zedernholz.",
+          "taste": "Konzentriert und geschmeidig, mit reifem Tannin und einem langen, balsamischen Finale.",
+          "aging": "14 Monate französische Eiche; anschliessend mindestens 12 Monate Flaschenreife.",
+          "history": "Cigales liegt auf dem kastilischen Hochplateau nördlich von Valladolid. Alte Tempranillo-Reben wachsen in kargen Kies- und Lehmböden unter starken Temperaturunterschieden. Museum Reserva übersetzt diese Herkunft in dunkle Frucht, würzige Reife und eine überraschend elegante Struktur."
+        },
+        {
+          "name": "Viña Mayor Reserva",
+          "price": "64",
+          "vintage": "2018",
+          "region": "Ribera del Duero, Spanien",
+          "size": "75 cl",
+          "bouquet": "Reife Kirsche, Brombeere, Vanille, Zeder und feine balsamische Töne.",
+          "taste": "Harmonisch und seidig, mit gereifter Frucht, feinem Tannin und würziger Länge.",
+          "aging": "Je nach Jahrgang 15–18 Monate französische Eiche; anschliessend lange Flaschenreife.",
+          "history": "Viña Mayor entstand im Herzen der Ribera del Duero mit dem Anspruch, regionale Tradition präzise und zeitgemäss auszubauen. Die Reserva erhält mehr Fass- und Flaschenzeit als der Crianza. Dadurch wird die Kraft des Tempranillo runder, würziger und feiner."
+        }
+      ]
+    },
+    {
+      "id": "italien-portugal",
+      "title": "Italien & Portugal",
+      "subtitle": "Südliche Wärme und aromatische Fülle",
+      "wines": [
+        {
+          "name": "Peuceta Primitivo",
+          "price": "46",
+          "vintage": "2024",
+          "region": "Puglia IGP, Italien",
+          "size": "75 cl",
+          "bouquet": "Reife Pflaume, Brombeere, schwarze Kirsche und mediterrane Gewürze.",
+          "taste": "Weich, vollmundig und fruchtbetont, mit milder Säure und samtigem Ausklang.",
+          "aging": "Fruchtbetonter Ausbau; genaue Dauer und Fassart sind vom Erzeuger nicht ausgewiesen.",
+          "history": "Primitivo gehört seit Generationen zur Weinlandschaft Apuliens. Die Traube reift früh – daher ihr Name – und sammelt unter südlicher Sonne viel Aroma und Zucker. Peuceta zeigt diese Tradition in einem unkomplizierten, fruchtbetonten Stil mit weicher Struktur."
+        },
+        {
+          "name": "Primitivo di Manduria",
+          "price": "58",
+          "vintage": "2022",
+          "region": "Manduria DOC, Italien",
+          "size": "75 cl",
+          "bouquet": "Schwarzkirsche, Pflaume, Feige, Lakritz und süsse Gewürze.",
+          "taste": "Opulent und samtig, mit warmer Frucht, sanftem Tannin und langem, würzigem Finish.",
+          "aging": "Holz- bzw. Eichenfassausbau; Dauer gemäss aktueller Charge und Verfügbarkeit.",
+          "history": "Rund um Manduria wachsen viele Primitivo-Reben als niedrige Buschreben im warmen Wind zwischen Ionischem Meer und roter Erde. Diese alte Erziehungsform schützt die Trauben vor Hitze. Der Wein verbindet hohe Reife mit dunkler Frucht und mediterraner Würze."
+        },
+        {
+          "name": "Sessantanni Primitivo",
+          "price": "82",
+          "vintage": "2019",
+          "region": "Primitivo di Manduria DOP, Italien",
+          "size": "75 cl",
+          "bouquet": "Konfitüre von dunklen Beeren, Trockenfeige, Kakao, Vanille und Tabak.",
+          "taste": "Dicht, üppig und samtig mit süsslicher Würze und aussergewöhnlich langem Nachhall.",
+          "aging": "12 Monate in französischer und amerikanischer Eiche.",
+          "history": "Sessantanni wurde als Spitzenwein aus rund sechzigjährigen Primitivo-Buschreben geschaffen. Die alten Reben liefern nur kleine Mengen, dafür besonders konzentrierte Trauben. Das Weingut San Marzano machte diesen opulenten Stil zu einem international bekannten Ausdruck des südlichen Apuliens."
+        },
+        {
+          "name": "Adega de Vila Real Reserva",
+          "price": "54",
+          "vintage": "2022",
+          "region": "Douro DOC, Portugal",
+          "size": "75 cl",
+          "bouquet": "Rote und schwarze Waldfrüchte, Pflaume, Gewürze und dezente Röstaromen.",
+          "taste": "Vollmundig und weich, mit reifer Frucht, ausgewogener Säure und elegantem Finale.",
+          "aging": "Gärung im Edelstahl bei ca. 24 °C, teils malolaktisch im Holz; ein Teil reift 12 Monate überwiegend in französischer Eiche.",
+          "history": "Die Adega de Vila Real bündelt die Arbeit zahlreicher Winzer aus dem oberen Douro. Ihre Reben stehen auf steilen, schieferreichen Hängen, die oft nur mühsam zu bearbeiten sind. Traditionelle portugiesische Sorten werden verschnitten, damit Frucht, Würze und Struktur zusammenfinden."
+        }
+      ]
+    }
+  ]
+}
